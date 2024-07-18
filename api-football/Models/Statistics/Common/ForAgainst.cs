@@ -5,9 +5,9 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace api_football.Models.Statistics
+namespace api_football.Models.Statistics.Common
 {
-    internal class ForAgainst
+    public class ForAgainst
     {
         [JsonPropertyName("for")]
         public required HomeAwayInt _for { get; set; }

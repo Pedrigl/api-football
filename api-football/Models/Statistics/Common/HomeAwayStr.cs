@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace api_football.Models.Statistics
+namespace api_football.Models.Statistics.Common
 {
-    internal class HomeAwayStr
+    public class HomeAwayStr
     {
         public required string home { get; set; }
         public required string away { get; set; }

@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using api_football.Models.Statistics.Common;
 
 namespace api_football.Models.Statistics
 {
-    internal class Biggest
+    public class Biggest
     {
-        public required WDLInt streak { get; set; }
+        public required WinDrawLossInt streak { get; set; }
         public required HomeAwayStr wins { get; set; }
         public required HomeAwayStr loses { get; set; }
         public required ForAgainst goals { get; set; }

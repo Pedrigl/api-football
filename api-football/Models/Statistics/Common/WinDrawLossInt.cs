@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace api_football.Models.Statistics
+namespace api_football.Models.Statistics.Common
 {
-    internal class WDLInt
+    public class WinDrawLossInt
     {
         public int wins { get; set; }
         public int draws { get; set; }

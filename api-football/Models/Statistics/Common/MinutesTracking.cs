@@ -5,9 +5,9 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace api_football.Models.Statistics.Goals
+namespace api_football.Models.Statistics.Common
 {
-    public class GoalMinutes
+    public class MinutesTracking
     {
         [JsonPropertyName("0-15")]
         public required MinutePercentageDetails _0_15 { get; set; }

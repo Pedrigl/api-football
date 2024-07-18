@@ -15,6 +15,6 @@ namespace api_football.Models.Statistics
         public required string form { get; set; }
         public required Fixtures fixtures { get; set; } 
         public required GoalsScored goals { get; set; }
-
+        public required Biggest biggest { get; set; }
     }
 }
