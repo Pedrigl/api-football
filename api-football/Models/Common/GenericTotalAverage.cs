@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace api_football.Models.Common
 {
-    public class HomeAwayTotalInt
+    public class GenericTotalAverage <Tt,Ta>
     {
-        public int home { get; set; }
-        public int away { get; set; }
-        public int total { get; set; }
+        public required Tt total { get; set; }
+        public required Ta average { get; set; }
     }
 }

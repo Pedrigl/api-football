@@ -1,13 +1,13 @@
-﻿using System;
+﻿using api_football.Models.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using api_football.Models.Common;
 
-namespace api_football.Models.Statistics
+namespace api_football.Models.Predictions
 {
-    public class Fixtures
+    public class PredictionFixtures
     {
         public required GenericHomeAwayTotal<int> played { get; set; }
         public required GenericHomeAwayTotal<int> wins { get; set; }

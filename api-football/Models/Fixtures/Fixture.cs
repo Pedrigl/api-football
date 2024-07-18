@@ -12,7 +12,7 @@ namespace api_football.Models.Fixtures
         public required FixtureInfo fixture { get; set; }
         public required FixtureLeague league { get; set; }
         public required FixtureMatch teams { get; set; }
-        public HomeAwayInt? goals { get; set; }
+        public GenericHomeAway<int>? goals { get; set; }
         public FixtureScore? score { get; set; }
     }
 }

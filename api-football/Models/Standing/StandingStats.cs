@@ -13,6 +13,6 @@ namespace api_football.Models.Standing
         public int win { get; set; }
         public int draw { get; set; }
         public int lose { get; set; }
-        public required ForAgainstInt goals { get; set; }
+        public required GenericForAgainst<int> goals { get; set; }
     }
 }

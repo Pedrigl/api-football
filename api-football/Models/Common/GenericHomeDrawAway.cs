@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace api_football.Models.Common
 {
-    public class HomeAwayInt
+    public class GenericHomeDrawAway <T> : GenericHomeAway<T>
     {
-        public int home { get; set; }
-        public int away { get; set; }
+        public required T draw { get; set; }
     }
 }

@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace api_football.Models.Common
 {
-    public class HomeAwayStr
+    public class GenericHomeAwayTotal <T> : GenericHomeAway<T>
     {
-        public required string home { get; set; }
-        public required string away { get; set; }
+        public required T total { get; set; }
     }
 }

@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace api_football.Models.Common
 {
-    public class WinDrawLossInt
+    public class GenericHomeAway <T>
     {
-        public int wins { get; set; }
-        public int draws { get; set; }
-        public int loses { get; set; }
+        public required T home { get; set; }
+        public required T away { get; set; }
     }
 }

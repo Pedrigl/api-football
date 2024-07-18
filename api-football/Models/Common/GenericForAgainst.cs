@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace api_football.Models.Common
 {
-    public class ForAgainst
+    public class GenericForAgainst <T> 
     {
         [JsonPropertyName("for")]
-        public required HomeAwayInt _for { get; set; }
-        public required HomeAwayInt against { get; set; }
+        public required T _for { get; set; }
+        public required T against { get; set; }
     }
 }

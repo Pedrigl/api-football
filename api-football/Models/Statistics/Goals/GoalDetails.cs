@@ -9,8 +9,8 @@ namespace api_football.Models.Statistics.Goals
 {
     public class GoalDetails
     {
-        public required HomeAwayTotalInt total { get; set; }
-        public required HomeAwayTotalStr average { get; set; }
+        public required GenericHomeAwayTotal<int> total { get; set; }
+        public required GenericHomeAwayTotal<string> average { get; set; }
         public required MinutesTracking minute { get; set; }
     }
 }

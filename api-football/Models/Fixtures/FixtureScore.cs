@@ -9,9 +9,9 @@ namespace api_football.Models.Fixtures
 {
     public class FixtureScore
     {
-        public HomeAwayInt? halftime { get; set; }
-        public HomeAwayInt? fulltime { get; set; }
-        public HomeAwayInt? extratime { get; set; }
-        public HomeAwayInt? penalty { get; set; }
+        public GenericHomeAway<int>? halftime { get; set; }
+        public GenericHomeAway<int>? fulltime { get; set; }
+        public GenericHomeAway<int>? extratime { get; set; }
+        public GenericHomeAway<int>? penalty { get; set; }
     }
 }
