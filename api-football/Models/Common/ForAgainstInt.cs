@@ -5,12 +5,13 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace api_football.Models.Statistics.Common
+namespace api_football.Models.Common
 {
-    public class ForAgainst
+    public class ForAgainstInt
     {
         [JsonPropertyName("for")]
-        public required HomeAwayInt _for { get; set; }
-        public required HomeAwayInt against { get; set; }
+        public int _for { get; set; }
+
+        public int against { get; set; }
     }
 }

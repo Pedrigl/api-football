@@ -1,4 +1,4 @@
-﻿using api_football.Models.Statistics.Common;
+﻿using api_football.Models.Common;
 using api_football.Models.Statistics.Goals;
 using System;
 using System.Collections.Generic;

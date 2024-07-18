@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace api_football.Models.Statistics.Common
+namespace api_football.Models.Common
 {
     public class WinDrawLossInt
     {

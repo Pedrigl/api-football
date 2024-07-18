@@ -5,7 +5,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace api_football.Models.Statistics.Common
+namespace api_football.Models.Common
 {
     public class MinutesTracking
     {

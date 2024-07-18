@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace api_football.Models.Common
 {
-    internal class Paging
+    public class TypeValuePair<T>
     {
-        public int current { get; set; }
-        public int total { get; set; }
+        public required string type { get; set; }
+        public required T value { get; set; }
     }
 }

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace api_football.Models.Statistics.Common
+namespace api_football.Models
 {
-    public class TotalPercentage
+    internal class Paging
     {
+        public int current { get; set; }
         public int total { get; set; }
-        public required string percentage { get; set; }
     }
 }

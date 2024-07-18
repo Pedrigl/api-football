@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using api_football.Models.Statistics.Common;
+using api_football.Models.Common;
 
 namespace api_football.Models.Statistics.Goals
 {
