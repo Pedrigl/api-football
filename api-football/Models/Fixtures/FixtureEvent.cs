@@ -1,4 +1,6 @@
-﻿using System;
+﻿using api_football.Models.Common;
+using api_football.Models.Statistics;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +10,12 @@ namespace api_football.Models.Fixtures
 {
     public class FixtureEvent
     {
-
+        public required Time time { get; set; }
+        public required Team team { get; set; }
+        public required PlayerTuple player { get; set; }
+        public required PlayerTuple assist { get; set; }
+        public required string type { get; set; }
+        public required string detail { get; set; }
+        public string? comments { get; set; }
     }
 }
