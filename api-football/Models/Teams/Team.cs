@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace api_football.Models.Teams
 {
-    internal class Team
+    public class Team
     {
         public required TeamInfo team { get; set; }
-        public required Venue venue { get; set; }
+        public required TeamVenue venue { get; set; }
     }
 }
