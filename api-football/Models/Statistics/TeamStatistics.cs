@@ -1,4 +1,5 @@
-﻿using api_football.Models.Statistics.Goals;
+﻿using api_football.Models.Statistics.Common;
+using api_football.Models.Statistics.Goals;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +17,10 @@ namespace api_football.Models.Statistics
         public required Fixtures fixtures { get; set; } 
         public required GoalsScored goals { get; set; }
         public required Biggest biggest { get; set; }
+        public required HomeAwayTotalInt clean_sheet { get; set; }
+        public required HomeAwayTotalInt failed_to_score { get; set; }
+        public required Penalties penalty { get; set; }
+        public FormationPlayed[]? lineups { get; set; }
+        public required Cards cards { get; set; }
     }
 }

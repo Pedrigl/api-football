@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace api_football.Models.Statistics.Common
 {
-    public class MinutePercentageDetails
+    public class TotalPercentage
     {
-        public int? minute { get; set; }
-        public string? percentage { get; set; }
+        public int total { get; set; }
+        public required string percentage { get; set; }
     }
 }
