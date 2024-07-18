@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace api_football.Models.Statistics.Fixtures.Fixtures
+namespace api_football.Models.Statistics
 {
-    internal class FixturesInfo
+    internal class HomeAwayTotalInt
     {
         public int home { get; set; }
         public int away { get; set; }
