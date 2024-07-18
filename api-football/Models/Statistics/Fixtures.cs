@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace api_football.Models.Statistics
 {
-    internal class Fixtures
+    public class Fixtures
     {
         public required HomeAwayTotalInt played { get; set; }
         public required HomeAwayTotalInt wins { get; set; }

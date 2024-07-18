@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace api_football.Models.Statistics
 {
-    internal class League 
+    public class League 
     {
         public int id { get; set; }
         public required string name { get; set; }
