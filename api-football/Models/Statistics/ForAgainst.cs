@@ -5,12 +5,12 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace api_football.Models.Statistics.Biggest
+namespace api_football.Models.Statistics
 {
-    internal class MostGoals
+    internal class ForAgainst
     {
         [JsonPropertyName("for")]
-        public required GoalsScored _for { get; set; }
-        public required GoalsScored against { get; set; }
+        public required HomeAwayInt _for { get; set; }
+        public required HomeAwayInt against { get; set; }
     }
 }

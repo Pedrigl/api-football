@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace api_football.Models.Statistics.Biggest
+namespace api_football.Models.Statistics
 {
-    internal class GoalsScored
+    internal class HomeAwayInt
     {
         public int home { get; set; }
         public int away { get; set; }
