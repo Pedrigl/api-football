@@ -5,7 +5,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace api_football.Models.Statistics.Goals.Goals
+namespace api_football.Models.Statistics.Goals
 {
     internal class GoalMinutes
     {
