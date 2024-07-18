@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace api_football.Models.Statistics.Goals
 {
-    internal class GoalMinutes
+    public class GoalMinutes
     {
         [JsonPropertyName("0-15")]
         public required MinutePercentageDetails _0_15 { get; set; }

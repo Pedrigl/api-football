@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace api_football.Models.Statistics.Goals
 {
-    internal class AverageGoals
+    public class AverageGoals
     {
         public required string Home { get; set; }
         public required string Away { get; set; }

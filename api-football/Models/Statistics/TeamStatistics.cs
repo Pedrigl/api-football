@@ -1,4 +1,5 @@
-﻿using System;
+﻿using api_football.Models.Statistics.Goals;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ namespace api_football.Models.Statistics
         public required Team team { get; set; }
         public required string form { get; set; }
         public required Fixtures fixtures { get; set; } 
+        public required GoalsScored goals { get; set; }
 
     }
 }
