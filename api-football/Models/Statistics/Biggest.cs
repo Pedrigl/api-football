@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace api_football.Models.Statistics.Biggest
+namespace api_football.Models.Statistics
 {
     internal class Biggest
     {
