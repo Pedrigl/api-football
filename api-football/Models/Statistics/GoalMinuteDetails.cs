@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace api_football.Models.Statistics
 {
-    internal class StatisticsTeam
+    internal class GoalMinuteDetails
     {
-        public int id { get; set; }
-        public required string name { get; set; }
-        public required string logo { get; set; }
+        public int minute { get; set; }
+        public required string percentage { get; set; }
     }
 }
