@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace api_football.Models.Statistics
+namespace api_football.Models.Statistics.Goals.Goals
 {
     internal class GoalMinuteDetails
     {
