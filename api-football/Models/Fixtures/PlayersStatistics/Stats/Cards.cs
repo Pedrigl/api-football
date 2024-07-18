@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace api_football.Models.Fixtures.PlayersStatistics.Stats
+{
+    public class Cards
+    {
+        public int? yellow { get; set; }
+        public int? red { get; set; }
+    }
+}
