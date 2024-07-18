@@ -12,8 +12,8 @@ namespace api_football.Models.Fixtures
     {
         public required Time time { get; set; }
         public required Team team { get; set; }
-        public required PlayerTuple player { get; set; }
-        public required PlayerTuple assist { get; set; }
+        public required IdNameTuple player { get; set; }
+        public required IdNameTuple assist { get; set; }
         public required string type { get; set; }
         public required string detail { get; set; }
         public string? comments { get; set; }

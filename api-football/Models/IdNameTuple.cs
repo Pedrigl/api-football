@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace api_football.Models
 {
-    public class PlayerTuple
+    public class IdNameTuple
     {
         public int? id { get; set; }
-        public string? player { get; set; }
+        public string? name { get; set; }
     }
 }
