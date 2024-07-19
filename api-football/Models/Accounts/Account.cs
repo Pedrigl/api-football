@@ -1,5 +1,4 @@
-﻿using api_football.Models.Account;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace api_football.Models.Coachs
+namespace api_football.Models.Coaches
 {
     public class Coach : Person
     {

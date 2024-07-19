@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace api_football.Models.Fixtures.PlayerStatistics
+namespace api_football.Models.Fixtures.PlayersStatistics
 {
     public class PlayersStatisticsTeam : Team
     {

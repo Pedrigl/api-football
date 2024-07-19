@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace api_football.Models.Account
+namespace api_football.Models.Accounts
 {
     public class RequestQuota
     {

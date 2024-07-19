@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace api_football.Models
+namespace api_football.Models.Teams
 {
     public class TeamVenue
     {
