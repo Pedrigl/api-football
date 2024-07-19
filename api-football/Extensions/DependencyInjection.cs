@@ -26,6 +26,7 @@ namespace api_football.Extensions
             services.AddTransient<IPredictionsHandler, PredictionsHandler>();
             services.AddTransient<ICoachesHandler, CoachesHandler>();
             services.AddTransient<IPlayersHandler, PlayersHandler>();
+            services.AddTransient<ITransfersHandler, TransfersHandler>();
 
             return services;
         }
