@@ -12,9 +12,9 @@ namespace api_football.Handlers
     public class TimezoneHandler : ITimezoneHandler
     {
         private readonly HttpClient _client;
-        public TimezoneHandler(HttpClient client)
+        public TimezoneHandler(IHttpClientFactory clientFactory)
         {
-            _client = client;
+            _client = clientFactory.CreateClient("api-football-client");
         }
 
         public async Task<RootCallResult<string[]>> GetTimezones()
