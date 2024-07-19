@@ -1,5 +1,5 @@
 ﻿using api_football.Handlers.Interfaces;
-using api_football.Models.Coachs;
+using api_football.Models.Coaches;
 using api_football.Models.Root;
 using System;
 using System.Collections.Generic;
