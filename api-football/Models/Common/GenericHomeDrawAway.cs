@@ -8,6 +8,9 @@ namespace api_football.Models.Common
 {
     public class GenericHomeDrawAway <T> : GenericHomeAway<T>
     {
+        internal GenericHomeDrawAway()
+        {
+        }
         public required T draw { get; set; }
     }
 }

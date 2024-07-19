@@ -8,6 +8,9 @@ namespace api_football.Models.Fixtures.PlayersStatistics.Stats
 {
     public class Fouls
     {
+        internal Fouls()
+        {
+        }
         public int? drawn { get; set; }
         public int? committed { get; set; }
     }

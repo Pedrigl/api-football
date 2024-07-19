@@ -9,6 +9,9 @@ namespace api_football.Models.Coachs
 {
     public class CoachingJob
     {
+        internal CoachingJob()
+        {
+        }
         public required Team team { get; set; }
         public required string start { get; set; }
         public string? end { get; set; }

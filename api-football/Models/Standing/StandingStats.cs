@@ -9,6 +9,9 @@ namespace api_football.Models.Standing
 {
     public class StandingStats
     {
+        internal StandingStats()
+        {
+        }
         public int played { get; set; }
         public int win { get; set; }
         public int draw { get; set; }

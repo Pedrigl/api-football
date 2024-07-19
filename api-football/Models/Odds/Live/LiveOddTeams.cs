@@ -8,6 +8,9 @@ namespace api_football.Models.Odds.Live
 {
     public class LiveOddTeams
     {
+        internal LiveOddTeams()
+        {
+        }
         public int id { get; set; }
         public int goals { get; set; }
     }

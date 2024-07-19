@@ -10,6 +10,9 @@ namespace api_football.Models.Fixtures
 {
     public class FixtureEvent
     {
+        internal FixtureEvent()
+        {
+        }
         public required Time time { get; set; }
         public required Team team { get; set; }
         public required IdNameTuple player { get; set; }

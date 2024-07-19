@@ -8,6 +8,9 @@ namespace api_football.Models.Odds.Live
 {
     public class OddLeague
     {
+        internal OddLeague()
+        {
+        }
         public int id { get; set; }
         public int season { get; set; }
     }

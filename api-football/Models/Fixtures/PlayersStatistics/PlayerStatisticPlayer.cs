@@ -9,6 +9,9 @@ namespace api_football.Models.Fixtures.PlayersStatistics
 {
     public class PlayerStatisticPlayer
     {
+        internal PlayerStatisticPlayer()
+        {
+        }
         public required PersonInfo player { get; set; }
         public required Stats.Statistics[] statistics { get; set; }
     }

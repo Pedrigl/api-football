@@ -8,6 +8,9 @@ namespace api_football.Models.Common
 {
     public class TotalPercentage
     {
+        internal TotalPercentage()
+        {
+        }
         public int total { get; set; }
         public required string percentage { get; set; }
     }

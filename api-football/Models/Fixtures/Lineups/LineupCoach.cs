@@ -8,6 +8,7 @@ namespace api_football.Models.Fixtures.Lineups
 {
     public class LineupCoach : IdNameTuple
     {
+        internal LineupCoach() { }
         public string? photo { get; set; }
     }
 }

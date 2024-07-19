@@ -9,6 +9,9 @@ namespace api_football.Models.Injuries
 {
     public class PlayerInjured : PersonInfo
     {
+        internal PlayerInjured()
+        {
+        }
         public string? type { get; set; }
         public string? reason { get; set; }
     }

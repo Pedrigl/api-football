@@ -8,6 +8,9 @@ namespace api_football.Models.Fixtures
 {
     public class FixtureInfo
     {
+        internal FixtureInfo()
+        {
+        }
         public int id { get; set; }
         public string? referee { get; set; }
         public string? timezone { get; set; }

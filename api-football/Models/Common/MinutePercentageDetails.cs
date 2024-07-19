@@ -8,6 +8,9 @@ namespace api_football.Models.Common
 {
     public class MinutePercentageDetails
     {
+        internal MinutePercentageDetails()
+        {
+        }
         public int? minute { get; set; }
         public string? percentage { get; set; }
     }

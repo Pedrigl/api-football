@@ -9,6 +9,9 @@ namespace api_football.Models.Fixtures.PlayerStatistics
 {
     public class PlayersStatisticsTeam : Team
     {
+        internal PlayersStatisticsTeam()
+        {
+        }
         public DateTime update { get; set; }
     }
 }

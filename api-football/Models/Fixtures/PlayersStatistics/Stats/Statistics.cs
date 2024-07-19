@@ -8,6 +8,9 @@ namespace api_football.Models.Fixtures.PlayersStatistics.Stats
 {
     public class Statistics
     {
+        internal Statistics()
+        {
+        }
         public required GamesPlayed games { get; set; }
         public int? offsides { get; set; }
         public required Shots shots { get; set; }

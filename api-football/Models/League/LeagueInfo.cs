@@ -8,6 +8,9 @@ namespace api_football.Models.League
 {
     public class LeagueInfo
     {
+        internal LeagueInfo()
+        {
+        }
         public int id { get; set; }
         public required string name { get; set; }
         public required string type { get; set; }

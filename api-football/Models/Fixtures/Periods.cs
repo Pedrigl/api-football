@@ -8,6 +8,9 @@ namespace api_football.Models.Fixtures
 {
     public class Periods
     {
+        internal Periods()
+        {
+        }
         public long? first { get; set; }
         public long? second { get; set; }
     }

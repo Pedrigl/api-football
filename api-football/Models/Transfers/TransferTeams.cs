@@ -10,6 +10,9 @@ namespace api_football.Models.Transfers
 {
     public class TransferTeams
     {
+        internal TransferTeams()
+        {
+        }
         [JsonPropertyName("in")]
         public required Team _in { get; set; }
         [JsonPropertyName("out")]

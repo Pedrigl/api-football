@@ -13,6 +13,9 @@ namespace api_football.Models.Players
 {
     public class PlayerStatistics
     {
+        internal PlayerStatistics()
+        {
+        }
         public required Team team { get; set; }
         public required Statistics.League league { get; set; }
         public required SeasonPlayed games { get; set; }

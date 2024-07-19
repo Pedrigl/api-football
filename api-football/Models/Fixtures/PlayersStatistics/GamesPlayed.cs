@@ -8,6 +8,9 @@ namespace api_football.Models.Fixtures.PlayersStatistics
 {
     public class GamesPlayed
     {
+        internal GamesPlayed()
+        {
+        }
         public int minutes { get; set; }
         public int? number { get; set; }
         public string? position { get; set; }

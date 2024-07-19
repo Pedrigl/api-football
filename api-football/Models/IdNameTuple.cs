@@ -8,6 +8,9 @@ namespace api_football.Models
 {
     public class IdNameTuple
     {
+        internal IdNameTuple()
+        {
+        }
         public int? id { get; set; }
         public string? name { get; set; }
     }

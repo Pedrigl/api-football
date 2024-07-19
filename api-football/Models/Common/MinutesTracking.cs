@@ -9,6 +9,9 @@ namespace api_football.Models.Common
 {
     public class MinutesTracking
     {
+        internal MinutesTracking()
+        {
+        }
         [JsonPropertyName("0-15")]
         public required MinutePercentageDetails _0_15 { get; set; }
 

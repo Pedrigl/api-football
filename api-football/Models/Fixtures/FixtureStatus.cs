@@ -9,6 +9,9 @@ namespace api_football.Models.Fixtures
 {
     public class FixtureStatus
     {
+        internal FixtureStatus()
+        {
+        }
         [JsonPropertyName("long")]
         public string? _long { get; set; }
         [JsonPropertyName("short")]

@@ -15,7 +15,7 @@ namespace api_football.Models.Statistics
         public required Team team { get; set; }
         public required string form { get; set; }
         public required Fixtures fixtures { get; set; } 
-        public required GoalsScored goals { get; set; }
+        public required GenericForAgainst<GoalDetails> goals { get; set; }
         public required Biggest biggest { get; set; }
         public required GenericHomeAwayTotal<int> clean_sheet { get; set; }
         public required GenericHomeAwayTotal<int> failed_to_score { get; set; }

@@ -9,6 +9,9 @@ namespace api_football.Models.Predictions
 {
     public class PredictionsInfo
     {
+        internal PredictionsInfo()
+        {
+        }
         public required PredictedResult winner { get; set; }
         public bool win_or_draw { get; set; }
         public string? under_over_15 { get; set; }

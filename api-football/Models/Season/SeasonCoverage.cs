@@ -8,6 +8,9 @@ namespace api_football.Models.Season
 {
     public class SeasonCoverage
     {
+        internal SeasonCoverage()
+        {
+        }
         public required SeasonCoverageFixtures fixtures { get; set; }
         public bool standings { get; set; }
         public bool players { get; set; }

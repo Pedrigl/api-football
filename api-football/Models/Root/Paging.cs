@@ -8,6 +8,9 @@ namespace api_football.Models.Root
 {
     public class Paging
     {
+        internal Paging()
+        {
+        }
         public int current { get; set; }
         public int total { get; set; }
     }

@@ -10,6 +10,9 @@ namespace api_football.Models.Predictions
 {
     public class PredictionLeague
     {
+        internal PredictionLeague()
+        {
+        }
         public required string form { get; set; }
         public required PredictionFixtures fixtures { get; set; }
         public required GenericForAgainst<GenericTotalAverage<GenericHomeAwayTotal<int>,GenericHomeAwayTotal<string>>> goals { get; set; }

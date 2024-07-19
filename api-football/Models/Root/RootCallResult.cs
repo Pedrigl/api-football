@@ -8,6 +8,9 @@ namespace api_football.Models.Root
 {
     public class RootCallResult<T> where T : class
     {
+        internal RootCallResult()
+        {
+        }
         public required string get { get; set; }
         public object? parameters { get; set; }
         public object[]? errors { get; set; }

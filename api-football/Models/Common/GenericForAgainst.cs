@@ -9,6 +9,9 @@ namespace api_football.Models.Common
 {
     public class GenericForAgainst <T> 
     {
+        internal GenericForAgainst()
+        {
+        }
         [JsonPropertyName("for")]
         public required T _for { get; set; }
         public required T against { get; set; }

@@ -8,6 +8,9 @@ namespace api_football.Models.Odds.Live
 {
     public class OddValue
     {
+        internal OddValue()
+        {
+        }
         public required string value { get; set; }
         public required string odd { get; set; }
         public required string handicap { get; set; }

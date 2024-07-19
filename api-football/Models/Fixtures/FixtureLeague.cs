@@ -9,6 +9,9 @@ namespace api_football.Models.Fixtures
 {
     public class FixtureLeague : Statistics.League
     {
+        internal FixtureLeague()
+        {
+        }
         public required string round { get; set; }
     }
 }

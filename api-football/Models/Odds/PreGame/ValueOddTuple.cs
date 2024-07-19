@@ -8,6 +8,9 @@ namespace api_football.Models.Odds.PreGame
 {
     public class ValueOddTuple
     {
+        internal ValueOddTuple()
+        {
+        }
         public int value { get; set; }
         public required string odd { get; set; }
     }

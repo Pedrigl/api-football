@@ -9,6 +9,9 @@ namespace api_football.Models.Players
 {
     public class Substitutions
     {
+        internal Substitutions()
+        {
+        }
         [JsonPropertyName("in")]
         public int _in { get; set; }
         [JsonPropertyName("out")]

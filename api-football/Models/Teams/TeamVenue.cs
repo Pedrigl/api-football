@@ -8,6 +8,9 @@ namespace api_football.Models
 {
     public class TeamVenue
     {
+        internal TeamVenue()
+        {
+        }
         public int id { get; set; }
         public required string name { get; set; }
         public required string address { get; set; }
