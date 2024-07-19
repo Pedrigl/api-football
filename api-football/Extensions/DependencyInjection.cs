@@ -29,6 +29,7 @@ namespace api_football.Extensions
             services.AddTransient<ITransfersHandler, TransfersHandler>();
             services.AddTransient<ITrophiesHandler, TrophiesHandler>();
             services.AddTransient<ISidelinesHandler, SidelinesHandler>();
+            services.AddTransient<IOddHandler, OddHandler>();
 
             return services;
         }
