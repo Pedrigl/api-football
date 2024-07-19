@@ -14,5 +14,26 @@ namespace api_football.Handlers
         {
             _client = clientFactory.CreateClient("api-football-client");
         }
+
+        protected virtual string BuildUrl(string endpoint, string[] allowedParameters, Dictionary<string, string> parameters)
+        {
+            string[] parametersNotAllowed = parameters.Keys.Where(p => !allowedParameters.Contains(p)).ToArray();
+            if (parametersNotAllowed.Length > 0)
+                throw new ArgumentException($"Invalid parameters: {parametersNotAllowed}");
+
+            StringBuilder url = new StringBuilder(endpoint);
+            if (parameters.Count > 0)
+            {
+                url.Append("?");
+
+                foreach (var parameter in parameters)
+                {
+                    if(parameter.Value != null)
+                        url.Append($"{parameter.Key}={parameter.Value}&");
+                }
+                url.Remove(url.Length - 1, 1);
+            }
+            return url.ToString();
+        }
     }
 }
