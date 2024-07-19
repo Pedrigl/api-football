@@ -33,7 +33,7 @@ namespace api_football.Handlers
 
                 foreach (var parameter in parameters)
                 {
-                    if(parameter.Value != null)
+                    if(parameter.Value != null && parameter.Value != "0")
                         url.Append($"{parameter.Key}={parameter.Value}&");
                 }
 
