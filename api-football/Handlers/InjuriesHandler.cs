@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace api_football.Handlers
 {
-    public class InjuryHandler : GenericHandler, IInjuryHandler
+    public class InjuriesHandler : GenericHandler, IInjuriesHandler
     {
-        public InjuryHandler(IHttpClientFactory clientFactory) : base(clientFactory)
+        public InjuriesHandler(IHttpClientFactory clientFactory) : base(clientFactory)
         {
         }
 

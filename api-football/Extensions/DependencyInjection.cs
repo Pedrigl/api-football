@@ -22,7 +22,7 @@ namespace api_football.Extensions
             services.AddTransient<IVenuesHandler,VenuesHandler>();
             services.AddTransient<IStandingsHandler, StandingHandler>();
             services.AddTransient<IFixturesHandler, FixturesHandler>();
-            services.AddTransient<IInjuryHandler, InjuryHandler>();
+            services.AddTransient<IInjuriesHandler, InjuriesHandler>();
 
             return services;
         }
