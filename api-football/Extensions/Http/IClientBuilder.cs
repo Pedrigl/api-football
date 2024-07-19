@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace api_football.Extemsions.Http
+namespace api_football.Extensions.Http
 {
-    public interface IHttpClientBuilder
+    public interface IClientBuilder
     {
         HttpClient Build();
     }

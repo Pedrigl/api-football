@@ -1,4 +1,5 @@
-﻿using api_football.Models.Root;
+﻿using api_football.Handlers.Interfaces;
+using api_football.Models.Root;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace api_football.Handlers
 {
-    public class TimezoneHandler
+    public class TimezoneHandler : ITimezoneHandler
     {
         private readonly HttpClient _client;
         public TimezoneHandler(HttpClient client)
