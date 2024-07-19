@@ -12,9 +12,9 @@ using Team = api_football.Models.Teams.Team;
 
 namespace api_football.Handlers
 {
-    public class TeamHandler : GenericHandler, ITeamHandler
+    public class TeamsHandler : GenericHandler, ITeamsHandler
     {
-        public TeamHandler(IHttpClientFactory clientFactory) : base(clientFactory)
+        public TeamsHandler(IHttpClientFactory clientFactory) : base(clientFactory)
         {
         }
 
