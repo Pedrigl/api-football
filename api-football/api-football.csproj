@@ -5,7 +5,31 @@
     <RootNamespace>api_football</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>api-football</Title>
+    <Authors>Pedrito</Authors>
+    <Description>A C# Wrapper to the api-football.com/ API. Made to be as accurate to the web services as possible.</Description>
+    <PackageProjectUrl>https://github.com/Pedrigl/api-football</PackageProjectUrl>
+    <PackageIcon>favicon-120.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Pedrigl/api-football</RepositoryUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\favicon-120.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
