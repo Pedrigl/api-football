@@ -15,7 +15,7 @@ namespace api_football.Handlers
         {
         }
 
-        public async Task<RootCallResult<League>> GetLeagues(int? id, string? name, string? country,
+        public async Task<RootCallResult<League[]>> GetLeagues(int? id, string? name, string? country,
                                                                string? code, int? season, int? team,
                                                                string? type, string? current, string? search, int? last)
         {
@@ -32,10 +32,10 @@ namespace api_football.Handlers
             if (response.StatusCode > System.Net.HttpStatusCode.NoContent)
                 throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<League>>(content);
+            return await JsonSerializer.DeserializeAsync<RootCallResult<League[]>>(content);
         }
 
-        public async Task<RootCallResult<int>> GetSeasons()
+        public async Task<RootCallResult<int[]>> GetSeasons()
         {
             var url = BuildUrl("leagues");
 
@@ -45,7 +45,7 @@ namespace api_football.Handlers
             if (response.StatusCode > System.Net.HttpStatusCode.NoContent)
                 throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<int>>(content);
+            return await JsonSerializer.DeserializeAsync<RootCallResult<int[]>>(content);
         }
     }
 }

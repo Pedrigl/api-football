@@ -9,6 +9,6 @@ namespace api_football.Handlers.Interfaces
 {
     public interface ITimezoneHandler
     {
-        Task<RootCallResult<string>> GetTimezones();
+        Task<RootCallResult<string[]>> GetTimezones();
     }
 }

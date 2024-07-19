@@ -10,6 +10,6 @@ namespace api_football.Handlers.Interfaces
 {
     public interface ICountryHandler
     {
-        Task<RootCallResult<Country>> GetCountries(string? name, string? code, string? search);
+        Task<RootCallResult<Country[]>> GetCountries(string? name, string? code, string? search);
     }
 }
