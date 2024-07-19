@@ -16,7 +16,7 @@ namespace api_football.Handlers
         {
         }
 
-        public async Task<RootCallResult<Country[]>> GetCountries(string? name, string? code, string? search)
+        public async Task<RootCallResult<Country>> GetCountries(string? name, string? code, string? search)
         {
             var url = BuildUrl("countries", new string[] { "name", "code", "search" },
                             new Dictionary<string, string> { { "name", name }, { "code", code }, { "search", search } });
@@ -26,7 +26,7 @@ namespace api_football.Handlers
             if (response.StatusCode > System.Net.HttpStatusCode.NoContent)
                 throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<Country[]>>(content);
+            return await JsonSerializer.DeserializeAsync<RootCallResult<Country>>(content);
         }
 
 
