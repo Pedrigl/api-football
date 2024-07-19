@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace api_football.Models.Root
 {
-    internal class RootCallResult<T> where T : class
+    public class RootCallResult<T> where T : class
     {
         public required string get { get; set; }
         public object? parameters { get; set; }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace api_football.Models.League
 {
-    internal class League
+    public class League
     {
         public required LeagueInfo league { get; set; }
         public required Country country { get; set; }

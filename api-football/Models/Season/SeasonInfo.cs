@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace api_football.Models.Season
 {
-    internal class SeasonInfo
+    public class SeasonInfo
     {
         public int year { get; set; }
         public required string start { get; set; }

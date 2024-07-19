@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace api_football.Models.Season
 {
-    internal class SeasonCoverageFixtures
+    public class SeasonCoverageFixtures
     {
         public bool events { get; set; }
         public bool lineups { get; set; }

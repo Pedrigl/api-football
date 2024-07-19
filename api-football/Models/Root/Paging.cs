@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace api_football.Models.Root
 {
-    internal class Paging
+    public class Paging
     {
         public int current { get; set; }
         public int total { get; set; }
