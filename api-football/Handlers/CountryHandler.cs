@@ -9,17 +9,16 @@ using api_football.Models;
 using api_football.Handlers.Interfaces;
 namespace api_football.Handlers
 {
-    public class CountryHandler : ICountryHandler
+    public class CountryHandler : GenericHandler, ICountryHandler
     {
-        private readonly HttpClient _client;
 
-        public CountryHandler(IHttpClientFactory clientFactory)
+        public CountryHandler(IHttpClientFactory clientFactory) : base(clientFactory)
         {
-            _client = clientFactory.CreateClient("api-football-client");
         }
 
-        public async Task<RootCallResult<Country[]>> GetCountries()
+        public async Task<RootCallResult<Country[]>> GetCountries(string? name, string? code, string? search)
         {
+
             var response = await _client.GetAsync("countries");
             var content = await response.Content.ReadAsStreamAsync();
             if (response.StatusCode > System.Net.HttpStatusCode.NoContent)

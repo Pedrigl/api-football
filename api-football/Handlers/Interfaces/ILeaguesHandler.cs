@@ -1,4 +1,4 @@
-﻿using api_football.Models;
+﻿using api_football.Models.League;
 using api_football.Models.Root;
 using System;
 using System.Collections.Generic;
@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace api_football.Handlers.Interfaces
 {
-    public interface ICountryHandler
+    public interface ILeaguesHandler
     {
-        Task<RootCallResult<Country[]>> GetCountries(string? name, string? code, string? search);
+        Task<RootCallResult<League[]>> GetLeagues();
+        Task<RootCallResult<int[]>> GetSeasons();
     }
 }

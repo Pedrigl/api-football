@@ -9,12 +9,10 @@ using System.Threading.Tasks;
 
 namespace api_football.Handlers
 {
-    public class TimezoneHandler : ITimezoneHandler
+    public class TimezoneHandler : GenericHandler, ITimezoneHandler
     {
-        private readonly HttpClient _client;
-        public TimezoneHandler(IHttpClientFactory clientFactory)
+        public TimezoneHandler(IHttpClientFactory clientFactory) : base(clientFactory)
         {
-            _client = clientFactory.CreateClient("api-football-client");
         }
 
         public async Task<RootCallResult<string[]>> GetTimezones()
