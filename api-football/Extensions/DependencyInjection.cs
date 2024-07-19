@@ -20,6 +20,7 @@ namespace api_football.Extensions
             services.AddTransient<ILeaguesHandler,LeaguesHandler>();
             services.AddTransient<ITeamsHandler,TeamsHandler>();
             services.AddTransient<IVenuesHandler,VenuesHandler>();
+            services.AddTransient<IStandingsHandler, StandingHandler>();
 
             return services;
         }
