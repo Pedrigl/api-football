@@ -19,6 +19,8 @@ namespace api_football.Extensions
             services.AddTransient<ICountryHandler,CountryHandler>();
             services.AddTransient<ILeaguesHandler,LeaguesHandler>();
             services.AddTransient<ITeamsHandler,TeamsHandler>();
+            services.AddTransient<IVenuesHandler,VenuesHandler>();
+
             return services;
         }
         
