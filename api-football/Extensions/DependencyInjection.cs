@@ -16,6 +16,7 @@ namespace api_football.Extensions
         {
             services.AddHttpClient("api-football-client", client => clientBuilder.Build());
             services.AddTransient<ITimezoneHandler,TimezoneHandler>();
+            services.AddTransient<ICountryHandler,CountryHandler>();
             return services;
         }
         
