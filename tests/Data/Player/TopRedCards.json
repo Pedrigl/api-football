@@ -1,0 +1,1915 @@
+{
+  "get": "players/topredcards",
+  "parameters": {
+    "season": "2020",
+    "league": "61"
+  },
+  "errors": [],
+  "results": 20,
+  "paging": {
+    "current": 0,
+    "total": 1
+  },
+  "response": [
+    {
+      "player": {
+        "id": 22004,
+        "name": "Moreto Cassamã",
+        "firstname": "Moreto Moro",
+        "lastname": "Cassamã",
+        "age": 23,
+        "birth": {
+          "date": "1998-02-16",
+          "place": "Bissau",
+          "country": "Portugal"
+        },
+        "nationality": "Guinea-Bissau",
+        "height": "165 cm",
+        "weight": "63 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/22004.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 93,
+            "name": "Reims",
+            "logo": "https://media.api-sports.io/football/teams/93.png"
+          },
+          "league": {
+            "id": 61,
+            "name": "Ligue 1",
+            "country": "France",
+            "logo": "https://media.api-sports.io/football/leagues/61.png",
+            "flag": "https://media.api-sports.io/flags/fr.svg",
+            "season": 2020
+          },
+          "games": {
+            "appearences": 23,
+            "lineups": 20,
+            "minutes": 1550,
+            "number": null,
+            "position": "Midfielder",
+            "rating": "6.760869",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 3,
+            "out": 10,
+            "bench": 5
+          },
+          "shots": {
+            "total": 7,
+            "on": 2
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": null,
+            "saves": null
+          },
+          "passes": {
+            "total": 1005,
+            "key": 10,
+            "accuracy": 43
+          },
+          "tackles": {
+            "total": 31,
+            "blocks": 5,
+            "interceptions": 33
+          },
+          "duels": {
+            "total": 131,
+            "won": 74
+          },
+          "dribbles": {
+            "attempts": 24,
+            "success": 22,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 18,
+            "committed": 22
+          },
+          "cards": {
+            "yellow": 8,
+            "yellowred": 0,
+            "red": 2
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 21998,
+        "name": "A. Disasi",
+        "firstname": "Axel",
+        "lastname": "Disasi",
+        "age": 23,
+        "birth": {
+          "date": "1998-03-11",
+          "place": "Gonesse",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "190 cm",
+        "weight": "86 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/21998.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 91,
+            "name": "Monaco",
+            "logo": "https://media.api-sports.io/football/teams/91.png"
+          },
+          "league": {
+            "id": 61,
+            "name": "Ligue 1",
+            "country": "France",
+            "logo": "https://media.api-sports.io/football/leagues/61.png",
+            "flag": "https://media.api-sports.io/flags/fr.svg",
+            "season": 2020
+          },
+          "games": {
+            "appearences": 22,
+            "lineups": 19,
+            "minutes": 1602,
+            "number": null,
+            "position": "Defender",
+            "rating": "6.747619",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 3,
+            "out": 3,
+            "bench": 8
+          },
+          "shots": {
+            "total": 13,
+            "on": 6
+          },
+          "goals": {
+            "total": 3,
+            "conceded": 0,
+            "assists": null,
+            "saves": null
+          },
+          "passes": {
+            "total": 1180,
+            "key": 4,
+            "accuracy": 47
+          },
+          "tackles": {
+            "total": 21,
+            "blocks": 10,
+            "interceptions": 21
+          },
+          "duels": {
+            "total": 143,
+            "won": 77
+          },
+          "dribbles": {
+            "attempts": 8,
+            "success": 5,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 12,
+            "committed": 21
+          },
+          "cards": {
+            "yellow": 4,
+            "yellowred": 0,
+            "red": 2
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 1912,
+        "name": "D. Payet",
+        "firstname": "Dimitri",
+        "lastname": "Payet",
+        "age": 34,
+        "birth": {
+          "date": "1987-03-29",
+          "place": "Saint-Pierre",
+          "country": "Réunion"
+        },
+        "nationality": "France",
+        "height": "175 cm",
+        "weight": "77 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/1912.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 81,
+            "name": "Marseille",
+            "logo": "https://media.api-sports.io/football/teams/81.png"
+          },
+          "league": {
+            "id": 61,
+            "name": "Ligue 1",
+            "country": "France",
+            "logo": "https://media.api-sports.io/football/leagues/61.png",
+            "flag": "https://media.api-sports.io/flags/fr.svg",
+            "season": 2020
+          },
+          "games": {
+            "appearences": 25,
+            "lineups": 20,
+            "minutes": 1716,
+            "number": null,
+            "position": "Midfielder",
+            "rating": "6.956000",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 5,
+            "out": 11,
+            "bench": 5
+          },
+          "shots": {
+            "total": 21,
+            "on": 9
+          },
+          "goals": {
+            "total": 4,
+            "conceded": 0,
+            "assists": 4,
+            "saves": null
+          },
+          "passes": {
+            "total": 816,
+            "key": 45,
+            "accuracy": 25
+          },
+          "tackles": {
+            "total": 17,
+            "blocks": 2,
+            "interceptions": 4
+          },
+          "duels": {
+            "total": 156,
+            "won": 81
+          },
+          "dribbles": {
+            "attempts": 46,
+            "success": 28,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 32,
+            "committed": 11
+          },
+          "cards": {
+            "yellow": 3,
+            "yellowred": 0,
+            "red": 2
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 1,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 21571,
+        "name": "Hilton",
+        "firstname": "Vitorino",
+        "lastname": "Hilton da Silva",
+        "age": 44,
+        "birth": {
+          "date": "1977-09-13",
+          "place": "Brasília",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "180 cm",
+        "weight": "78 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/21571.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 82,
+            "name": "Montpellier",
+            "logo": "https://media.api-sports.io/football/teams/82.png"
+          },
+          "league": {
+            "id": 61,
+            "name": "Ligue 1",
+            "country": "France",
+            "logo": "https://media.api-sports.io/football/leagues/61.png",
+            "flag": "https://media.api-sports.io/flags/fr.svg",
+            "season": 2020
+          },
+          "games": {
+            "appearences": 22,
+            "lineups": 18,
+            "minutes": 1537,
+            "number": null,
+            "position": "Defender",
+            "rating": "6.588888",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 4,
+            "out": 0,
+            "bench": 7
+          },
+          "shots": {
+            "total": 10,
+            "on": 3
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": null,
+            "saves": null
+          },
+          "passes": {
+            "total": 808,
+            "key": null,
+            "accuracy": 33
+          },
+          "tackles": {
+            "total": 10,
+            "blocks": 19,
+            "interceptions": 27
+          },
+          "duels": {
+            "total": 91,
+            "won": 49
+          },
+          "dribbles": {
+            "attempts": 1,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 10,
+            "committed": 15
+          },
+          "cards": {
+            "yellow": 3,
+            "yellowred": 0,
+            "red": 2
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 2478,
+        "name": "D. Benedetto",
+        "firstname": "Darío Ismael",
+        "lastname": "Benedetto",
+        "age": 31,
+        "birth": {
+          "date": "1990-05-17",
+          "place": "Berazategui",
+          "country": "Argentina"
+        },
+        "nationality": "Argentina",
+        "height": "177 cm",
+        "weight": "75 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/2478.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 81,
+            "name": "Marseille",
+            "logo": "https://media.api-sports.io/football/teams/81.png"
+          },
+          "league": {
+            "id": 61,
+            "name": "Ligue 1",
+            "country": "France",
+            "logo": "https://media.api-sports.io/football/leagues/61.png",
+            "flag": "https://media.api-sports.io/flags/fr.svg",
+            "season": 2020
+          },
+          "games": {
+            "appearences": 26,
+            "lineups": 18,
+            "minutes": 1484,
+            "number": null,
+            "position": "Attacker",
+            "rating": "6.553846",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 8,
+            "out": 15,
+            "bench": 8
+          },
+          "shots": {
+            "total": 32,
+            "on": 13
+          },
+          "goals": {
+            "total": 4,
+            "conceded": 0,
+            "assists": 3,
+            "saves": null
+          },
+          "passes": {
+            "total": 310,
+            "key": 13,
+            "accuracy": 9
+          },
+          "tackles": {
+            "total": 5,
+            "blocks": 2,
+            "interceptions": 3
+          },
+          "duels": {
+            "total": 164,
+            "won": 56
+          },
+          "dribbles": {
+            "attempts": 15,
+            "success": 9,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 19,
+            "committed": 17
+          },
+          "cards": {
+            "yellow": 2,
+            "yellowred": 1,
+            "red": 1
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 1,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 21433,
+        "name": "F. Miguel",
+        "firstname": "Florian",
+        "lastname": "Miguel",
+        "age": 25,
+        "birth": {
+          "date": "1996-09-01",
+          "place": "Brugge",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "179 cm",
+        "weight": "70 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/21433.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 92,
+            "name": "Nimes",
+            "logo": "https://media.api-sports.io/football/teams/92.png"
+          },
+          "league": {
+            "id": 61,
+            "name": "Ligue 1",
+            "country": "France",
+            "logo": "https://media.api-sports.io/football/leagues/61.png",
+            "flag": "https://media.api-sports.io/flags/fr.svg",
+            "season": 2020
+          },
+          "games": {
+            "appearences": 19,
+            "lineups": 16,
+            "minutes": 1357,
+            "number": null,
+            "position": "Defender",
+            "rating": "6.783333",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 3,
+            "out": 2,
+            "bench": 10
+          },
+          "shots": {
+            "total": 6,
+            "on": 3
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": null,
+            "saves": null
+          },
+          "passes": {
+            "total": 714,
+            "key": 1,
+            "accuracy": 35
+          },
+          "tackles": {
+            "total": 13,
+            "blocks": 12,
+            "interceptions": 40
+          },
+          "duels": {
+            "total": 125,
+            "won": 71
+          },
+          "dribbles": {
+            "attempts": 4,
+            "success": 3,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 29,
+            "committed": 14
+          },
+          "cards": {
+            "yellow": 2,
+            "yellowred": 1,
+            "red": 1
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 7,
+        "name": "A. Diallo",
+        "firstname": "Abdou",
+        "lastname": "Diallo",
+        "age": 25,
+        "birth": {
+          "date": "1996-05-04",
+          "place": "Tours",
+          "country": "France"
+        },
+        "nationality": "Senegal",
+        "height": "187 cm",
+        "weight": "79 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/7.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 85,
+            "name": "Paris Saint Germain",
+            "logo": "https://media.api-sports.io/football/teams/85.png"
+          },
+          "league": {
+            "id": 61,
+            "name": "Ligue 1",
+            "country": "France",
+            "logo": "https://media.api-sports.io/football/leagues/61.png",
+            "flag": "https://media.api-sports.io/flags/fr.svg",
+            "season": 2020
+          },
+          "games": {
+            "appearences": 18,
+            "lineups": 14,
+            "minutes": 1209,
+            "number": null,
+            "position": "Defender",
+            "rating": "7.005882",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 4,
+            "out": 1,
+            "bench": 8
+          },
+          "shots": {
+            "total": 3,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 951,
+            "key": 1,
+            "accuracy": 49
+          },
+          "tackles": {
+            "total": 12,
+            "blocks": 8,
+            "interceptions": 22
+          },
+          "duels": {
+            "total": 92,
+            "won": 55
+          },
+          "dribbles": {
+            "attempts": 20,
+            "success": 14,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 8,
+            "committed": 15
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 1,
+            "red": 1
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 8694,
+        "name": "W. Faes",
+        "firstname": "Wout",
+        "lastname": "Faes",
+        "age": 23,
+        "birth": {
+          "date": "1998-04-03",
+          "place": null,
+          "country": "Belgium"
+        },
+        "nationality": "Belgium",
+        "height": "187 cm",
+        "weight": "84 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/8694.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 93,
+            "name": "Reims",
+            "logo": "https://media.api-sports.io/football/teams/93.png"
+          },
+          "league": {
+            "id": 61,
+            "name": "Ligue 1",
+            "country": "France",
+            "logo": "https://media.api-sports.io/football/leagues/61.png",
+            "flag": "https://media.api-sports.io/flags/fr.svg",
+            "season": 2020
+          },
+          "games": {
+            "appearences": 26,
+            "lineups": 26,
+            "minutes": 2292,
+            "number": null,
+            "position": "Defender",
+            "rating": "6.907692",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 0
+          },
+          "shots": {
+            "total": 5,
+            "on": 1
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": null,
+            "saves": null
+          },
+          "passes": {
+            "total": 1228,
+            "key": 0,
+            "accuracy": 43
+          },
+          "tackles": {
+            "total": 25,
+            "blocks": 24,
+            "interceptions": 55
+          },
+          "duels": {
+            "total": 164,
+            "won": 95
+          },
+          "dribbles": {
+            "attempts": 12,
+            "success": 10,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 12,
+            "committed": 16
+          },
+          "cards": {
+            "yellow": 10,
+            "yellowred": 0,
+            "red": 1
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 1907,
+        "name": "H. Sakai",
+        "firstname": "Hiroki",
+        "lastname": "Sakai",
+        "age": 31,
+        "birth": {
+          "date": "1990-04-12",
+          "place": "Kashiwa",
+          "country": "Japan"
+        },
+        "nationality": "Japan",
+        "height": "183 cm",
+        "weight": "70 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/1907.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 81,
+            "name": "Marseille",
+            "logo": "https://media.api-sports.io/football/teams/81.png"
+          },
+          "league": {
+            "id": 61,
+            "name": "Ligue 1",
+            "country": "France",
+            "logo": "https://media.api-sports.io/football/leagues/61.png",
+            "flag": "https://media.api-sports.io/flags/fr.svg",
+            "season": 2020
+          },
+          "games": {
+            "appearences": 25,
+            "lineups": 23,
+            "minutes": 2087,
+            "number": null,
+            "position": "Defender",
+            "rating": "6.776000",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": 4,
+            "bench": 3
+          },
+          "shots": {
+            "total": 1,
+            "on": 0
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 926,
+            "key": 18,
+            "accuracy": 31
+          },
+          "tackles": {
+            "total": 71,
+            "blocks": 4,
+            "interceptions": 50
+          },
+          "duels": {
+            "total": 250,
+            "won": 133
+          },
+          "dribbles": {
+            "attempts": 21,
+            "success": 7,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 15,
+            "committed": 41
+          },
+          "cards": {
+            "yellow": 6,
+            "yellowred": 0,
+            "red": 1
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 21443,
+        "name": "T. Savanier",
+        "firstname": "Téji",
+        "lastname": "Savanier",
+        "age": 30,
+        "birth": {
+          "date": "1991-12-22",
+          "place": "Montpellier",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "171 cm",
+        "weight": "62 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/21443.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 82,
+            "name": "Montpellier",
+            "logo": "https://media.api-sports.io/football/teams/82.png"
+          },
+          "league": {
+            "id": 61,
+            "name": "Ligue 1",
+            "country": "France",
+            "logo": "https://media.api-sports.io/football/leagues/61.png",
+            "flag": "https://media.api-sports.io/flags/fr.svg",
+            "season": 2020
+          },
+          "games": {
+            "appearences": 22,
+            "lineups": 21,
+            "minutes": 1738,
+            "number": null,
+            "position": "Midfielder",
+            "rating": "7.100000",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 8,
+            "bench": 1
+          },
+          "shots": {
+            "total": 33,
+            "on": 15
+          },
+          "goals": {
+            "total": 5,
+            "conceded": 0,
+            "assists": 4,
+            "saves": null
+          },
+          "passes": {
+            "total": 850,
+            "key": 49,
+            "accuracy": 30
+          },
+          "tackles": {
+            "total": 39,
+            "blocks": 4,
+            "interceptions": 32
+          },
+          "duels": {
+            "total": 322,
+            "won": 149
+          },
+          "dribbles": {
+            "attempts": 70,
+            "success": 41,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 54,
+            "committed": 45
+          },
+          "cards": {
+            "yellow": 6,
+            "yellowred": 0,
+            "red": 1
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 2,
+            "missed": 2,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 941,
+        "name": "L. Benito",
+        "firstname": "Loris",
+        "lastname": "Benito Souto",
+        "age": 29,
+        "birth": {
+          "date": "1992-01-07",
+          "place": "Aarau",
+          "country": "Switzerland"
+        },
+        "nationality": "Switzerland",
+        "height": "184 cm",
+        "weight": "80 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/941.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 78,
+            "name": "Bordeaux",
+            "logo": "https://media.api-sports.io/football/teams/78.png"
+          },
+          "league": {
+            "id": 61,
+            "name": "Ligue 1",
+            "country": "France",
+            "logo": "https://media.api-sports.io/football/leagues/61.png",
+            "flag": "https://media.api-sports.io/flags/fr.svg",
+            "season": 2020
+          },
+          "games": {
+            "appearences": 25,
+            "lineups": 24,
+            "minutes": 2113,
+            "number": null,
+            "position": "Defender",
+            "rating": "6.828000",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 2,
+            "bench": 4
+          },
+          "shots": {
+            "total": 6,
+            "on": 1
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": null,
+            "saves": null
+          },
+          "passes": {
+            "total": 1240,
+            "key": 11,
+            "accuracy": 45
+          },
+          "tackles": {
+            "total": 35,
+            "blocks": 7,
+            "interceptions": 39
+          },
+          "duels": {
+            "total": 158,
+            "won": 84
+          },
+          "dribbles": {
+            "attempts": 2,
+            "success": 2,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 13,
+            "committed": 32
+          },
+          "cards": {
+            "yellow": 5,
+            "yellowred": 0,
+            "red": 1
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 22232,
+        "name": "Thiago Mendes",
+        "firstname": "Thiago Henrique",
+        "lastname": "Mendes Ribeiro",
+        "age": 29,
+        "birth": {
+          "date": "1992-03-15",
+          "place": "São Luís",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "176 cm",
+        "weight": "78 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/22232.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 80,
+            "name": "Lyon",
+            "logo": "https://media.api-sports.io/football/teams/80.png"
+          },
+          "league": {
+            "id": 61,
+            "name": "Ligue 1",
+            "country": "France",
+            "logo": "https://media.api-sports.io/football/leagues/61.png",
+            "flag": "https://media.api-sports.io/flags/fr.svg",
+            "season": 2020
+          },
+          "games": {
+            "appearences": 23,
+            "lineups": 19,
+            "minutes": 1813,
+            "number": null,
+            "position": "Midfielder",
+            "rating": "6.956521",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 4,
+            "out": 2,
+            "bench": 5
+          },
+          "shots": {
+            "total": 15,
+            "on": 6
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 1220,
+            "key": 22,
+            "accuracy": 46
+          },
+          "tackles": {
+            "total": 32,
+            "blocks": 6,
+            "interceptions": 32
+          },
+          "duels": {
+            "total": 157,
+            "won": 84
+          },
+          "dribbles": {
+            "attempts": 17,
+            "success": 11,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 20,
+            "committed": 22
+          },
+          "cards": {
+            "yellow": 5,
+            "yellowred": 0,
+            "red": 1
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 3080,
+        "name": "M. Munetsi",
+        "firstname": "Marshall Nyasha",
+        "lastname": "Munetsi",
+        "age": 25,
+        "birth": {
+          "date": "1996-06-22",
+          "place": "Bulawayo",
+          "country": "Zimbabwe"
+        },
+        "nationality": "Zimbabwe",
+        "height": "188 cm",
+        "weight": "83 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/3080.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 93,
+            "name": "Reims",
+            "logo": "https://media.api-sports.io/football/teams/93.png"
+          },
+          "league": {
+            "id": 61,
+            "name": "Ligue 1",
+            "country": "France",
+            "logo": "https://media.api-sports.io/football/leagues/61.png",
+            "flag": "https://media.api-sports.io/flags/fr.svg",
+            "season": 2020
+          },
+          "games": {
+            "appearences": 21,
+            "lineups": 15,
+            "minutes": 1386,
+            "number": null,
+            "position": "Midfielder",
+            "rating": "6.828571",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 6,
+            "out": 3,
+            "bench": 9
+          },
+          "shots": {
+            "total": 9,
+            "on": 3
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": null,
+            "saves": null
+          },
+          "passes": {
+            "total": 587,
+            "key": 7,
+            "accuracy": 30
+          },
+          "tackles": {
+            "total": 27,
+            "blocks": 17,
+            "interceptions": 51
+          },
+          "duels": {
+            "total": 163,
+            "won": 93
+          },
+          "dribbles": {
+            "attempts": 17,
+            "success": 12,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 15,
+            "committed": 23
+          },
+          "cards": {
+            "yellow": 5,
+            "yellowred": 0,
+            "red": 1
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 3416,
+        "name": "J. Boye",
+        "firstname": "John",
+        "lastname": "Boye",
+        "age": 34,
+        "birth": {
+          "date": "1987-04-23",
+          "place": "Accra",
+          "country": "Ghana"
+        },
+        "nationality": "Ghana",
+        "height": "184 cm",
+        "weight": "73 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/3416.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 112,
+            "name": "Metz",
+            "logo": "https://media.api-sports.io/football/teams/112.png"
+          },
+          "league": {
+            "id": 61,
+            "name": "Ligue 1",
+            "country": "France",
+            "logo": "https://media.api-sports.io/football/leagues/61.png",
+            "flag": "https://media.api-sports.io/flags/fr.svg",
+            "season": 2020
+          },
+          "games": {
+            "appearences": 28,
+            "lineups": 28,
+            "minutes": 2456,
+            "number": null,
+            "position": "Defender",
+            "rating": "6.885714",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 3,
+            "bench": 0
+          },
+          "shots": {
+            "total": 9,
+            "on": 1
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 2,
+            "saves": null
+          },
+          "passes": {
+            "total": 980,
+            "key": 6,
+            "accuracy": 30
+          },
+          "tackles": {
+            "total": 39,
+            "blocks": 18,
+            "interceptions": 61
+          },
+          "duels": {
+            "total": 188,
+            "won": 99
+          },
+          "dribbles": {
+            "attempts": 3,
+            "success": 3,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 13,
+            "committed": 23
+          },
+          "cards": {
+            "yellow": 4,
+            "yellowred": 0,
+            "red": 1
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 21711,
+        "name": "F. Sammaritano",
+        "firstname": "Frédéric",
+        "lastname": "Sammaritano",
+        "age": 35,
+        "birth": {
+          "date": "1986-03-23",
+          "place": "Vannes",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "162 cm",
+        "weight": "65 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/21711.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 89,
+            "name": "Dijon",
+            "logo": "https://media.api-sports.io/football/teams/89.png"
+          },
+          "league": {
+            "id": 61,
+            "name": "Ligue 1",
+            "country": "France",
+            "logo": "https://media.api-sports.io/football/leagues/61.png",
+            "flag": "https://media.api-sports.io/flags/fr.svg",
+            "season": 2020
+          },
+          "games": {
+            "appearences": 24,
+            "lineups": 9,
+            "minutes": 941,
+            "number": null,
+            "position": "Midfielder",
+            "rating": "6.604166",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 15,
+            "out": 9,
+            "bench": 18
+          },
+          "shots": {
+            "total": 8,
+            "on": 3
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 322,
+            "key": 20,
+            "accuracy": 17
+          },
+          "tackles": {
+            "total": 15,
+            "blocks": 0,
+            "interceptions": 9
+          },
+          "duels": {
+            "total": 107,
+            "won": 49
+          },
+          "dribbles": {
+            "attempts": 23,
+            "success": 14,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 18,
+            "committed": 12
+          },
+          "cards": {
+            "yellow": 4,
+            "yellowred": 0,
+            "red": 1
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 21499,
+        "name": "L. Deaux",
+        "firstname": "Lucas",
+        "lastname": "Deaux",
+        "age": 33,
+        "birth": {
+          "date": "1988-12-26",
+          "place": "Reims",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "188 cm",
+        "weight": "82 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/21499.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 92,
+            "name": "Nimes",
+            "logo": "https://media.api-sports.io/football/teams/92.png"
+          },
+          "league": {
+            "id": 61,
+            "name": "Ligue 1",
+            "country": "France",
+            "logo": "https://media.api-sports.io/football/leagues/61.png",
+            "flag": "https://media.api-sports.io/flags/fr.svg",
+            "season": 2020
+          },
+          "games": {
+            "appearences": 17,
+            "lineups": 15,
+            "minutes": 1347,
+            "number": null,
+            "position": "Midfielder",
+            "rating": "6.629411",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": 2,
+            "bench": 3
+          },
+          "shots": {
+            "total": 10,
+            "on": 4
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 739,
+            "key": 13,
+            "accuracy": 41
+          },
+          "tackles": {
+            "total": 30,
+            "blocks": 3,
+            "interceptions": 16
+          },
+          "duels": {
+            "total": 178,
+            "won": 90
+          },
+          "dribbles": {
+            "attempts": 23,
+            "success": 16,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 15,
+            "committed": 25
+          },
+          "cards": {
+            "yellow": 4,
+            "yellowred": 0,
+            "red": 1
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 6,
+        "name": "L. Balerdi",
+        "firstname": "Leonardo Julián",
+        "lastname": "Balerdi Rossa",
+        "age": 22,
+        "birth": {
+          "date": "1999-01-26",
+          "place": "Villa Mercedes",
+          "country": "Argentina"
+        },
+        "nationality": "Argentina",
+        "height": "187 cm",
+        "weight": "85 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/6.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 81,
+            "name": "Marseille",
+            "logo": "https://media.api-sports.io/football/teams/81.png"
+          },
+          "league": {
+            "id": 61,
+            "name": "Ligue 1",
+            "country": "France",
+            "logo": "https://media.api-sports.io/football/leagues/61.png",
+            "flag": "https://media.api-sports.io/flags/fr.svg",
+            "season": 2020
+          },
+          "games": {
+            "appearences": 13,
+            "lineups": 12,
+            "minutes": 1004,
+            "number": null,
+            "position": "Defender",
+            "rating": "6.476923",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 1,
+            "bench": 16
+          },
+          "shots": {
+            "total": 8,
+            "on": 2
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": null,
+            "saves": null
+          },
+          "passes": {
+            "total": 561,
+            "key": 0,
+            "accuracy": 41
+          },
+          "tackles": {
+            "total": 14,
+            "blocks": 6,
+            "interceptions": 16
+          },
+          "duels": {
+            "total": 114,
+            "won": 48
+          },
+          "dribbles": {
+            "attempts": 5,
+            "success": 2,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 13,
+            "committed": 21
+          },
+          "cards": {
+            "yellow": 4,
+            "yellowred": 0,
+            "red": 1
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 276,
+        "name": "Neymar",
+        "firstname": "Neymar",
+        "lastname": "da Silva Santos Júnior",
+        "age": 29,
+        "birth": {
+          "date": "1992-02-05",
+          "place": "Mogi das Cruzes",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "175 cm",
+        "weight": "68 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/276.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 85,
+            "name": "Paris Saint Germain",
+            "logo": "https://media.api-sports.io/football/teams/85.png"
+          },
+          "league": {
+            "id": 61,
+            "name": "Ligue 1",
+            "country": "France",
+            "logo": "https://media.api-sports.io/football/leagues/61.png",
+            "flag": "https://media.api-sports.io/flags/fr.svg",
+            "season": 2020
+          },
+          "games": {
+            "appearences": 11,
+            "lineups": 9,
+            "minutes": 865,
+            "number": null,
+            "position": "Attacker",
+            "rating": "7.490909",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": 0,
+            "bench": 2
+          },
+          "shots": {
+            "total": 32,
+            "on": 14
+          },
+          "goals": {
+            "total": 6,
+            "conceded": 0,
+            "assists": 3,
+            "saves": null
+          },
+          "passes": {
+            "total": 552,
+            "key": 32,
+            "accuracy": 39
+          },
+          "tackles": {
+            "total": 8,
+            "blocks": null,
+            "interceptions": 6
+          },
+          "duels": {
+            "total": 216,
+            "won": 111
+          },
+          "dribbles": {
+            "attempts": 99,
+            "success": 57,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 43,
+            "committed": 17
+          },
+          "cards": {
+            "yellow": 4,
+            "yellowred": 0,
+            "red": 1
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 3,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 21097,
+        "name": "Andrei Girotto",
+        "firstname": "Andrei",
+        "lastname": "Girotto",
+        "age": 29,
+        "birth": {
+          "date": "1992-02-17",
+          "place": "Bento Gonçalves",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "186 cm",
+        "weight": "73 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/21097.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 83,
+            "name": "Nantes",
+            "logo": "https://media.api-sports.io/football/teams/83.png"
+          },
+          "league": {
+            "id": 61,
+            "name": "Ligue 1",
+            "country": "France",
+            "logo": "https://media.api-sports.io/football/leagues/61.png",
+            "flag": "https://media.api-sports.io/flags/fr.svg",
+            "season": 2020
+          },
+          "games": {
+            "appearences": 27,
+            "lineups": 26,
+            "minutes": 2282,
+            "number": null,
+            "position": "Midfielder",
+            "rating": "6.844444",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 0,
+            "bench": 1
+          },
+          "shots": {
+            "total": 20,
+            "on": 5
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 1278,
+            "key": 10,
+            "accuracy": 40
+          },
+          "tackles": {
+            "total": 58,
+            "blocks": 11,
+            "interceptions": 50
+          },
+          "duels": {
+            "total": 254,
+            "won": 157
+          },
+          "dribbles": {
+            "attempts": 5,
+            "success": 3,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 21,
+            "committed": 25
+          },
+          "cards": {
+            "yellow": 3,
+            "yellowred": 0,
+            "red": 1
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 20519,
+        "name": "A. Oukidja",
+        "firstname": "Alexandre",
+        "lastname": "Oukidja",
+        "age": 33,
+        "birth": {
+          "date": "1988-07-19",
+          "place": "Nevers",
+          "country": "France"
+        },
+        "nationality": "Algeria",
+        "height": "184 cm",
+        "weight": "79 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/20519.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 112,
+            "name": "Metz",
+            "logo": "https://media.api-sports.io/football/teams/112.png"
+          },
+          "league": {
+            "id": 61,
+            "name": "Ligue 1",
+            "country": "France",
+            "logo": "https://media.api-sports.io/football/leagues/61.png",
+            "flag": "https://media.api-sports.io/flags/fr.svg",
+            "season": 2020
+          },
+          "games": {
+            "appearences": 27,
+            "lineups": 27,
+            "minutes": 2430,
+            "number": null,
+            "position": "Goalkeeper",
+            "rating": "6.922222",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 1,
+            "bench": 0
+          },
+          "shots": {
+            "total": 0,
+            "on": 0
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 26,
+            "assists": null,
+            "saves": 69
+          },
+          "passes": {
+            "total": 685,
+            "key": 1,
+            "accuracy": 16
+          },
+          "tackles": {
+            "total": null,
+            "blocks": 0,
+            "interceptions": 0
+          },
+          "duels": {
+            "total": 24,
+            "won": 20
+          },
+          "dribbles": {
+            "attempts": 2,
+            "success": 2,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 6,
+            "committed": 0
+          },
+          "cards": {
+            "yellow": 3,
+            "yellowred": 0,
+            "red": 1
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": 2
+          }
+        }
+      ]
+    }
+  ]
+}

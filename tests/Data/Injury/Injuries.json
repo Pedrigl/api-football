@@ -1,0 +1,378 @@
+{
+  "get": "injuries",
+  "parameters": {
+    "fixture": "686314"
+  },
+  "errors": [],
+  "results": 13,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "player": {
+        "id": 865,
+        "name": "D. Costa",
+        "photo": "https://media.api-sports.io/football/players/865.png",
+        "type": "Missing Fixture",
+        "reason": "Broken ankle"
+      },
+      "team": {
+        "id": 157,
+        "name": "Bayern Munich",
+        "logo": "https://media.api-sports.io/football/teams/157.png"
+      },
+      "fixture": {
+        "id": 686314,
+        "timezone": "UTC",
+        "date": "2021-04-07T19:00:00+00:00",
+        "timestamp": 1617822000
+      },
+      "league": {
+        "id": 2,
+        "season": 2020,
+        "name": "UEFA Champions League",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/2.png",
+        "flag": null
+      }
+    },
+    {
+      "player": {
+        "id": 510,
+        "name": "S. Gnabry",
+        "photo": "https://media.api-sports.io/football/players/510.png",
+        "type": "Missing Fixture",
+        "reason": "Illness"
+      },
+      "team": {
+        "id": 157,
+        "name": "Bayern Munich",
+        "logo": "https://media.api-sports.io/football/teams/157.png"
+      },
+      "fixture": {
+        "id": 686314,
+        "timezone": "UTC",
+        "date": "2021-04-07T19:00:00+00:00",
+        "timestamp": 1617822000
+      },
+      "league": {
+        "id": 2,
+        "season": 2020,
+        "name": "UEFA Champions League",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/2.png",
+        "flag": null
+      }
+    },
+    {
+      "player": {
+        "id": 496,
+        "name": "R. Hoffmann",
+        "photo": "https://media.api-sports.io/football/players/496.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 157,
+        "name": "Bayern Munich",
+        "logo": "https://media.api-sports.io/football/teams/157.png"
+      },
+      "fixture": {
+        "id": 686314,
+        "timezone": "UTC",
+        "date": "2021-04-07T19:00:00+00:00",
+        "timestamp": 1617822000
+      },
+      "league": {
+        "id": 2,
+        "season": 2020,
+        "name": "UEFA Champions League",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/2.png",
+        "flag": null
+      }
+    },
+    {
+      "player": {
+        "id": 521,
+        "name": "R. Lewandowski",
+        "photo": "https://media.api-sports.io/football/players/521.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 157,
+        "name": "Bayern Munich",
+        "logo": "https://media.api-sports.io/football/teams/157.png"
+      },
+      "fixture": {
+        "id": 686314,
+        "timezone": "UTC",
+        "date": "2021-04-07T19:00:00+00:00",
+        "timestamp": 1617822000
+      },
+      "league": {
+        "id": 2,
+        "season": 2020,
+        "name": "UEFA Champions League",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/2.png",
+        "flag": null
+      }
+    },
+    {
+      "player": {
+        "id": 514,
+        "name": "J. Martinez",
+        "photo": "https://media.api-sports.io/football/players/514.png",
+        "type": "Missing Fixture",
+        "reason": "Knock"
+      },
+      "team": {
+        "id": 157,
+        "name": "Bayern Munich",
+        "logo": "https://media.api-sports.io/football/teams/157.png"
+      },
+      "fixture": {
+        "id": 686314,
+        "timezone": "UTC",
+        "date": "2021-04-07T19:00:00+00:00",
+        "timestamp": 1617822000
+      },
+      "league": {
+        "id": 2,
+        "season": 2020,
+        "name": "UEFA Champions League",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/2.png",
+        "flag": null
+      }
+    },
+    {
+      "player": {
+        "id": 162037,
+        "name": "M. Tillman",
+        "photo": "https://media.api-sports.io/football/players/162037.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 157,
+        "name": "Bayern Munich",
+        "logo": "https://media.api-sports.io/football/teams/157.png"
+      },
+      "fixture": {
+        "id": 686314,
+        "timezone": "UTC",
+        "date": "2021-04-07T19:00:00+00:00",
+        "timestamp": 1617822000
+      },
+      "league": {
+        "id": 2,
+        "season": 2020,
+        "name": "UEFA Champions League",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/2.png",
+        "flag": null
+      }
+    },
+    {
+      "player": {
+        "id": 519,
+        "name": "C. Tolisso",
+        "photo": "https://media.api-sports.io/football/players/519.png",
+        "type": "Missing Fixture",
+        "reason": "Tendon Injury"
+      },
+      "team": {
+        "id": 157,
+        "name": "Bayern Munich",
+        "logo": "https://media.api-sports.io/football/teams/157.png"
+      },
+      "fixture": {
+        "id": 686314,
+        "timezone": "UTC",
+        "date": "2021-04-07T19:00:00+00:00",
+        "timestamp": 1617822000
+      },
+      "league": {
+        "id": 2,
+        "season": 2020,
+        "name": "UEFA Champions League",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/2.png",
+        "flag": null
+      }
+    },
+    {
+      "player": {
+        "id": 258,
+        "name": "J. Bernat",
+        "photo": "https://media.api-sports.io/football/players/258.png",
+        "type": "Missing Fixture",
+        "reason": "Knee Injury"
+      },
+      "team": {
+        "id": 85,
+        "name": "Paris Saint Germain",
+        "logo": "https://media.api-sports.io/football/teams/85.png"
+      },
+      "fixture": {
+        "id": 686314,
+        "timezone": "UTC",
+        "date": "2021-04-07T19:00:00+00:00",
+        "timestamp": 1617822000
+      },
+      "league": {
+        "id": 2,
+        "season": 2020,
+        "name": "UEFA Champions League",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/2.png",
+        "flag": null
+      }
+    },
+    {
+      "player": {
+        "id": 769,
+        "name": "A. Florenzi",
+        "photo": "https://media.api-sports.io/football/players/769.png",
+        "type": "Missing Fixture",
+        "reason": "Illness"
+      },
+      "team": {
+        "id": 85,
+        "name": "Paris Saint Germain",
+        "logo": "https://media.api-sports.io/football/teams/85.png"
+      },
+      "fixture": {
+        "id": 686314,
+        "timezone": "UTC",
+        "date": "2021-04-07T19:00:00+00:00",
+        "timestamp": 1617822000
+      },
+      "league": {
+        "id": 2,
+        "season": 2020,
+        "name": "UEFA Champions League",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/2.png",
+        "flag": null
+      }
+    },
+    {
+      "player": {
+        "id": 216,
+        "name": "M. Icardi",
+        "photo": "https://media.api-sports.io/football/players/216.png",
+        "type": "Missing Fixture",
+        "reason": "Muscle Injury"
+      },
+      "team": {
+        "id": 85,
+        "name": "Paris Saint Germain",
+        "logo": "https://media.api-sports.io/football/teams/85.png"
+      },
+      "fixture": {
+        "id": 686314,
+        "timezone": "UTC",
+        "date": "2021-04-07T19:00:00+00:00",
+        "timestamp": 1617822000
+      },
+      "league": {
+        "id": 2,
+        "season": 2020,
+        "name": "UEFA Champions League",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/2.png",
+        "flag": null
+      }
+    },
+    {
+      "player": {
+        "id": 263,
+        "name": "L. Kurzawa",
+        "photo": "https://media.api-sports.io/football/players/263.png",
+        "type": "Missing Fixture",
+        "reason": "Calf Injury"
+      },
+      "team": {
+        "id": 85,
+        "name": "Paris Saint Germain",
+        "logo": "https://media.api-sports.io/football/teams/85.png"
+      },
+      "fixture": {
+        "id": 686314,
+        "timezone": "UTC",
+        "date": "2021-04-07T19:00:00+00:00",
+        "timestamp": 1617822000
+      },
+      "league": {
+        "id": 2,
+        "season": 2020,
+        "name": "UEFA Champions League",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/2.png",
+        "flag": null
+      }
+    },
+    {
+      "player": {
+        "id": 271,
+        "name": "L. Paredes",
+        "photo": "https://media.api-sports.io/football/players/271.png",
+        "type": "Missing Fixture",
+        "reason": "Suspended"
+      },
+      "team": {
+        "id": 85,
+        "name": "Paris Saint Germain",
+        "logo": "https://media.api-sports.io/football/teams/85.png"
+      },
+      "fixture": {
+        "id": 686314,
+        "timezone": "UTC",
+        "date": "2021-04-07T19:00:00+00:00",
+        "timestamp": 1617822000
+      },
+      "league": {
+        "id": 2,
+        "season": 2020,
+        "name": "UEFA Champions League",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/2.png",
+        "flag": null
+      }
+    },
+    {
+      "player": {
+        "id": 273,
+        "name": "M. Verratti",
+        "photo": "https://media.api-sports.io/football/players/273.png",
+        "type": "Missing Fixture",
+        "reason": "Illness"
+      },
+      "team": {
+        "id": 85,
+        "name": "Paris Saint Germain",
+        "logo": "https://media.api-sports.io/football/teams/85.png"
+      },
+      "fixture": {
+        "id": 686314,
+        "timezone": "UTC",
+        "date": "2021-04-07T19:00:00+00:00",
+        "timestamp": 1617822000
+      },
+      "league": {
+        "id": 2,
+        "season": 2020,
+        "name": "UEFA Champions League",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/2.png",
+        "flag": null
+      }
+    }
+  ]
+}
