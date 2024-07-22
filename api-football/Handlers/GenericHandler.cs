@@ -19,7 +19,7 @@ namespace api_football.Handlers
         {
             allowedParameters ??= Array.Empty<string>();
             parameters ??= new Dictionary<string, string>();
-
+            parameters = parameters.Where(p => p.Value != null && p.Value != string.Empty && p.Value != "0").ToDictionary(p => p.Key, p => p.Value);
             string[] parametersNotAllowed = parameters.Keys.Where(p => !allowedParameters.Contains(p)).ToArray();
 
             if (parametersNotAllowed.Length > 0)
@@ -30,11 +30,9 @@ namespace api_football.Handlers
             if (parameters.Count > 0)
             {
                 url.Append("?");
-
                 foreach (var parameter in parameters)
                 {
-                    if(parameter.Value != null && parameter.Value != "0")
-                        url.Append($"{parameter.Key}={parameter.Value}&");
+                    url.Append($"{parameter.Key}={parameter.Value}&");
                 }
 
                 url.Remove(url.Length - 1, 1);
