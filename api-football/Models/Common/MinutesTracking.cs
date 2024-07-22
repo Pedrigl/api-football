@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.Json;
+using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
-
+using Newtonsoft.Json;
 namespace api_football.Models.Common
 {
     public class MinutesTracking
@@ -12,28 +12,28 @@ namespace api_football.Models.Common
         internal MinutesTracking()
         {
         }
-        [JsonPropertyName("0-15")]
+        [JsonProperty("0-15")]
         public required MinutePercentageDetails _0_15 { get; set; }
 
-        [JsonPropertyName("16-30")]
+        [JsonProperty("16-30")]
         public required MinutePercentageDetails _16_30 { get; set; }
 
-        [JsonPropertyName("31-45")]
+        [JsonProperty("31-45")]
         public required MinutePercentageDetails _31_45 { get; set; }
 
-        [JsonPropertyName("46-60")]
+        [JsonProperty("46-60")]
         public required MinutePercentageDetails _46_60 { get; set; }
 
-        [JsonPropertyName("61-75")]
+        [JsonProperty("61-75")]
         public required MinutePercentageDetails _61_75 { get; set; }
 
-        [JsonPropertyName("76-90")]
+        [JsonProperty("76-90")]
         public required MinutePercentageDetails _76_90 { get; set; }
 
-        [JsonPropertyName("91-105")]
+        [JsonProperty("91-105")]
         public required MinutePercentageDetails _91_105 { get; set; }
 
-        [JsonPropertyName("106-120")]
+        [JsonProperty("106-120")]
         public required MinutePercentageDetails _106_120 { get; set; }
     }
 }

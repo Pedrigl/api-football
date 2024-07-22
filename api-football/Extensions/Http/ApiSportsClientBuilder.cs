@@ -24,5 +24,12 @@ namespace api_football.Extensions.Http
 
             return _client;
         }
+
+        public void Configure(HttpClient client)
+        {
+            client.BaseAddress = new Uri("https://v3.football.api-sports.io/");
+            client.DefaultRequestHeaders.Clear();
+            client.DefaultRequestHeaders.Add("x-spisports-key", _apiKey);
+        }
     }
 }

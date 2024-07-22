@@ -27,5 +27,13 @@ namespace api_football.Extensions.Http
 
             return _client;
         }
+
+        public void Configure(HttpClient client)
+        {
+            client.BaseAddress = new Uri("https://api-football-v1.p.rapidapi.com/v3/");
+            client.DefaultRequestHeaders.Clear();
+            client.DefaultRequestHeaders.Add("x-rapidapi-key", _apiKey);
+            client.DefaultRequestHeaders.Add("x-rapidapi-host", "api-football-v1.p.rapidapi.com");
+        }
     }
 }

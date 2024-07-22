@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
-
+using Newtonsoft.Json;
 namespace api_football.Models.Transfers
 {
     public class TransferTeams
@@ -13,9 +13,9 @@ namespace api_football.Models.Transfers
         internal TransferTeams()
         {
         }
-        [JsonPropertyName("in")]
+        [JsonProperty("in")]
         public required Team _in { get; set; }
-        [JsonPropertyName("out")]
+        [JsonProperty("out")]
         public required Team _out { get; set; }
     }
 }

@@ -14,7 +14,7 @@ namespace api_football.Extensions
     {
         public static IServiceCollection AddApiFootballServices(this IServiceCollection services, IClientBuilder clientBuilder)
         {
-            services.AddHttpClient("api-football-client", client => clientBuilder.Build());
+            services.AddHttpClient("api-football-client", client => clientBuilder.Configure(client));
             services.AddTransient<ITimezoneHandler,TimezoneHandler>();
             services.AddTransient<ICountryHandler,CountryHandler>();
             services.AddTransient<ILeaguesHandler,LeaguesHandler>();
