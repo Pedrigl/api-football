@@ -20,7 +20,7 @@ namespace api_football.Extensions.Http
 
         public HttpClient Build()
         {
-            var client = _clientFactory.CreateClient();
+            var client = _clientFactory.CreateClient("api-football-client");
             client.BaseAddress = new Uri("https://api-football-v1.p.rapidapi.com/v3/");
             client.DefaultRequestHeaders.Clear();
             client.DefaultRequestHeaders.Add("x-rapidapi-key", _apiKey);

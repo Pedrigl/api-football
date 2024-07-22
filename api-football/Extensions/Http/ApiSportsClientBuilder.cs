@@ -18,7 +18,7 @@ namespace api_football.Extensions.Http
 
         public HttpClient Build()
         {
-            var client = _clientFactory.CreateClient();
+            var client = _clientFactory.CreateClient("api-football-client");
             client.BaseAddress = new Uri("https://v3.football.api-sports.io/");
             client.DefaultRequestHeaders.Clear();
             client.DefaultRequestHeaders.Add("x-spisports-key", _apiKey);
