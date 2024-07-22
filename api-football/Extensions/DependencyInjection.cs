@@ -12,7 +12,7 @@ namespace api_football.Extensions
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddApiFootballServices(this IServiceCollection services, IClientBuilder clientBuilder, string apiKey)
+        public static IServiceCollection AddApiFootballServices(this IServiceCollection services, IClientBuilder clientBuilder)
         {
             services.AddHttpClient("api-football-client", client => clientBuilder.Build());
             services.AddTransient<ITimezoneHandler,TimezoneHandler>();
