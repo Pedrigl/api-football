@@ -10,23 +10,22 @@ namespace api_football.Extensions.Http
     public class RapidApiClientBuilder : IClientBuilder
     {
         private readonly string _apiKey;
-        private readonly IHttpClientFactory _clientFactory;
+        private readonly HttpClient _client;
 
-        public RapidApiClientBuilder(string apiKey, IHttpClientFactory clientFactory)
+        public RapidApiClientBuilder(string apiKey)
         {
             _apiKey = apiKey;
-            _clientFactory = clientFactory;
+            _client = new HttpClient();
         }
 
         public HttpClient Build()
         {
-            var client = _clientFactory.CreateClient("api-football-client");
-            client.BaseAddress = new Uri("https://api-football-v1.p.rapidapi.com/v3/");
-            client.DefaultRequestHeaders.Clear();
-            client.DefaultRequestHeaders.Add("x-rapidapi-key", _apiKey);
-            client.DefaultRequestHeaders.Add("x-rapidapi-host", "api-football-v1.p.rapidapi.com");
+            _client.BaseAddress = new Uri("https://api-football-v1.p.rapidapi.com/v3/");
+            _client.DefaultRequestHeaders.Clear();
+            _client.DefaultRequestHeaders.Add("x-rapidapi-key", _apiKey);
+            _client.DefaultRequestHeaders.Add("x-rapidapi-host", "api-football-v1.p.rapidapi.com");
 
-            return client;
+            return _client;
         }
     }
 }

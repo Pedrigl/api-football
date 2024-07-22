@@ -9,21 +9,20 @@ namespace api_football.Extensions.Http
     public class ApiSportsClientBuilder : IClientBuilder
     {
         private readonly string _apiKey;
-        private readonly IHttpClientFactory _clientFactory;
-        public ApiSportsClientBuilder(string apiKey, IHttpClientFactory clientFactory)
+        private readonly HttpClient _client;
+        public ApiSportsClientBuilder(string apiKey)
         {
             _apiKey = apiKey;
-            _clientFactory = clientFactory;
+            _client = new HttpClient();
         }
 
         public HttpClient Build()
         {
-            var client = _clientFactory.CreateClient("api-football-client");
-            client.BaseAddress = new Uri("https://v3.football.api-sports.io/");
-            client.DefaultRequestHeaders.Clear();
-            client.DefaultRequestHeaders.Add("x-spisports-key", _apiKey);
+            _client.BaseAddress = new Uri("https://v3.football.api-sports.io/");
+            _client.DefaultRequestHeaders.Clear();
+            _client.DefaultRequestHeaders.Add("x-spisports-key", _apiKey);
 
-            return client;
+            return _client;
         }
     }
 }
