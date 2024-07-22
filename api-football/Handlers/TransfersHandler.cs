@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata;
 using System.Text;
-using System.Text.Json;
+using Newtonsoft.Json;
 using System.Threading.Tasks;
 
 namespace api_football.Handlers
@@ -26,12 +26,12 @@ namespace api_football.Handlers
             });
 
             var result = await _client.GetAsync(url);
-            var content = await result.Content.ReadAsStreamAsync();
+            var content = await result.Content.ReadAsStringAsync();
 
             if (result.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<Transfer[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<Transfer[]>>(content);
         }
     }
 }

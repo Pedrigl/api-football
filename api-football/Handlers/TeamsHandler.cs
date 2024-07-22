@@ -6,7 +6,7 @@ using api_football.Models.Teams;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.Json;
+using Newtonsoft.Json;
 using System.Threading.Tasks;
 using Team = api_football.Models.Teams.Team;
 
@@ -28,12 +28,12 @@ namespace api_football.Handlers
                                                                                                       { "venue", venue.ToString() }, { "search", search } });
 
             var response = await _client.GetAsync(url);
-            var content = await response.Content.ReadAsStreamAsync();
+            var content = await response.Content.ReadAsStringAsync();
 
             if (response.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<Team[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<Team[]>>(content);
         }
 
         public async Task<RootCallResult<TeamStatistics>> GetTeamStatistics(int league, int season, int team, string date)
@@ -43,12 +43,12 @@ namespace api_football.Handlers
                                                                                                                                                                { "team", team.ToString() }, { "date", date } });
 
             var response = await _client.GetAsync(url);
-            var content = await response.Content.ReadAsStreamAsync();
+            var content = await response.Content.ReadAsStringAsync();
 
             if (response.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<TeamStatistics>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<TeamStatistics>>(content);
         }
 
         public async Task<RootCallResult<int[]>> GetTeamSeasons(int team)
@@ -57,12 +57,12 @@ namespace api_football.Handlers
                                                               new Dictionary<string, string> { { "team", team.ToString() } });
 
             var response = await _client.GetAsync(url);
-            var content = await response.Content.ReadAsStreamAsync();
+            var content = await response.Content.ReadAsStringAsync();
 
             if (response.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<int[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<int[]>>(content);
         }
 
         public async Task<RootCallResult<Country[]>> GetTeamsCountries()
@@ -70,12 +70,12 @@ namespace api_football.Handlers
             var url = BuildUrl("teams/countries");
 
             var response = await _client.GetAsync(url);
-            var content = await response.Content.ReadAsStreamAsync();
+            var content = await response.Content.ReadAsStringAsync();
 
             if (response.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<Country[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<Country[]>>(content);
         }
     }
 }

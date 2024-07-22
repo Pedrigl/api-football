@@ -8,7 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.Json;
+using Newtonsoft.Json;
 using System.Threading.Tasks;
 
 namespace api_football.Handlers
@@ -30,12 +30,12 @@ namespace api_football.Handlers
             });
 
             var result = await _client.GetAsync(url);
-            var content = await result.Content.ReadAsStreamAsync();
+            var content = await result.Content.ReadAsStringAsync();
 
             if (result.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<LiveOdd[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<LiveOdd[]>>(content);
         }
 
         public async Task<RootCallResult<IdNameTuple[]>> GetAvailableLiveBets(string? id, string? search)
@@ -47,12 +47,12 @@ namespace api_football.Handlers
             });
 
             var result = await _client.GetAsync(url);
-            var content = await result.Content.ReadAsStreamAsync();
+            var content = await result.Content.ReadAsStringAsync();
 
             if (result.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<IdNameTuple[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<IdNameTuple[]>>(content);
         }
 
         public async Task<RootCallResult<PregameOdds[]>> GetPreGameOdds(int? fixture, int? league, int? season, string? date, string? timezone, int? page, int? bookmaker, int? bet)
@@ -70,12 +70,12 @@ namespace api_football.Handlers
             });
 
             var result = await _client.GetAsync(url);
-            var content = await result.Content.ReadAsStreamAsync();
+            var content = await result.Content.ReadAsStringAsync();
 
             if (result.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<PregameOdds[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<PregameOdds[]>>(content);
         }
 
         public async Task<RootCallResult<Mapping[]>> GetMappings(int? page)
@@ -86,12 +86,12 @@ namespace api_football.Handlers
             });
 
             var result = await _client.GetAsync(url);
-            var content = await result.Content.ReadAsStreamAsync();
+            var content = await result.Content.ReadAsStringAsync();
 
             if (result.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<Mapping[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<Mapping[]>>(content);
         }
 
         public async Task<RootCallResult<IdNameTuple[]>> GetAvailablePreGameBets(string? id, string? search)
@@ -103,12 +103,12 @@ namespace api_football.Handlers
             });
 
             var result = await _client.GetAsync(url);
-            var content = await result.Content.ReadAsStreamAsync();
+            var content = await result.Content.ReadAsStringAsync();
 
             if (result.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<IdNameTuple[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<IdNameTuple[]>>(content);
         }
 
         public async Task<RootCallResult<IdNameTuple[]>> GetAvailableBookMakers(string? id, string? search)
@@ -120,12 +120,12 @@ namespace api_football.Handlers
             });
 
             var result = await _client.GetAsync(url);
-            var content = await result.Content.ReadAsStreamAsync();
+            var content = await result.Content.ReadAsStringAsync();
 
             if (result.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<IdNameTuple[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<IdNameTuple[]>>(content);
         }
 
     }

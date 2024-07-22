@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.Json;
+using Newtonsoft.Json;
 using System.Threading.Tasks;
 
 namespace api_football.Handlers
@@ -18,11 +18,11 @@ namespace api_football.Handlers
         public async Task<RootCallResult<string[]>> GetTimezones()
         {
             var response = await _client.GetAsync("timezone");
-            var content = await response.Content.ReadAsStreamAsync();
+            var content = await response.Content.ReadAsStringAsync();
             if (response.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<string[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<string[]>>(content);
         }
     }
 }

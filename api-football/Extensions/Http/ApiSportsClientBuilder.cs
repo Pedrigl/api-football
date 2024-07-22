@@ -20,7 +20,7 @@ namespace api_football.Extensions.Http
         {
             _client.BaseAddress = new Uri("https://v3.football.api-sports.io/");
             _client.DefaultRequestHeaders.Clear();
-            _client.DefaultRequestHeaders.Add("x-spisports-key", _apiKey);
+            _client.DefaultRequestHeaders.Add("x-apisports-key", _apiKey);
 
             return _client;
         }
@@ -29,7 +29,7 @@ namespace api_football.Extensions.Http
         {
             client.BaseAddress = new Uri("https://v3.football.api-sports.io/");
             client.DefaultRequestHeaders.Clear();
-            client.DefaultRequestHeaders.Add("x-spisports-key", _apiKey);
+            client.DefaultRequestHeaders.Add("x-apisports-key", _apiKey);
         }
     }
 }

@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.Json;
+using Newtonsoft.Json;
 using System.Threading.Tasks;
 
 namespace api_football.Handlers
@@ -25,12 +25,12 @@ namespace api_football.Handlers
             );
 
             var result = await _client.GetAsync(url);
-            var content = await result.Content.ReadAsStreamAsync();
+            var content = await result.Content.ReadAsStringAsync();
 
             if (result.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<int[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<int[]>>(content);
         }
 
         public async Task<RootCallResult<Player[]>> GetPlayers(int? id, int? team, int? league, int? season, string? search, int? page)
@@ -46,12 +46,12 @@ namespace api_football.Handlers
             });
 
             var result = await _client.GetAsync(url);
-            var content = await result.Content.ReadAsStreamAsync();
+            var content = await result.Content.ReadAsStringAsync();
 
             if (result.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<Player[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<Player[]>>(content);
         }
 
         public async Task<RootCallResult<Squad[]>> GetSquads(int? id, int? team)
@@ -63,12 +63,12 @@ namespace api_football.Handlers
             });
 
             var result = await _client.GetAsync(url);
-            var content = await result.Content.ReadAsStreamAsync();
+            var content = await result.Content.ReadAsStringAsync();
 
             if (result.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<Squad[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<Squad[]>>(content);
         }
 
         public async Task<RootCallResult<TopStater[]>> GetTopScorers(int league, int season)
@@ -80,12 +80,12 @@ namespace api_football.Handlers
             });
 
             var result = await _client.GetAsync(url);
-            var content = await result.Content.ReadAsStreamAsync();
+            var content = await result.Content.ReadAsStringAsync();
 
             if (result.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<TopStater[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<TopStater[]>>(content);
         }
 
         public async Task<RootCallResult<TopStater[]>> GetTopAssisters(int league, int season)
@@ -97,12 +97,12 @@ namespace api_football.Handlers
             });
 
             var result = await _client.GetAsync(url);
-            var content = await result.Content.ReadAsStreamAsync();
+            var content = await result.Content.ReadAsStringAsync();
 
             if (result.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<TopStater[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<TopStater[]>>(content);
         }
 
         public async Task<RootCallResult<TopStater[]>> GetTopYellowCardReceivers(int league, int season)
@@ -114,12 +114,12 @@ namespace api_football.Handlers
             });
 
             var result = await _client.GetAsync(url);
-            var content = await result.Content.ReadAsStreamAsync();
+            var content = await result.Content.ReadAsStringAsync();
 
             if (result.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<TopStater[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<TopStater[]>>(content);
         }
 
         public async Task<RootCallResult<TopStater[]>> GetTopRedCardReceivers(int league, int season)
@@ -131,12 +131,12 @@ namespace api_football.Handlers
             });
 
             var result = await _client.GetAsync(url);
-            var content = await result.Content.ReadAsStreamAsync();
+            var content = await result.Content.ReadAsStringAsync();
 
             if (result.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<TopStater[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<TopStater[]>>(content);
         }
     }
 }

@@ -6,7 +6,7 @@ using api_football.Models.Root;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.Json;
+using Newtonsoft.Json;
 using System.Threading.Tasks;
 
 namespace api_football.Handlers
@@ -25,12 +25,12 @@ namespace api_football.Handlers
             });
 
             var response = await _client.GetAsync(url);
-            var content = await response.Content.ReadAsStreamAsync();
+            var content = await response.Content.ReadAsStringAsync();
 
             if (response.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<string[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<string[]>>(content);
         }
 
         public async Task<RootCallResult<Fixture[]>> GetFixtures(int? id, string? ids, string? live, string? date, int? league, int? season, int? team, int? last, int? next, string? from, string? to, string? round, string? status, int? venue, string? timezone)
@@ -55,12 +55,12 @@ namespace api_football.Handlers
             });
 
             var response = await _client.GetAsync(url);
-            var content = await response.Content.ReadAsStreamAsync();
+            var content = await response.Content.ReadAsStringAsync();
 
             if (response.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<Fixture[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<Fixture[]>>(content);
         }
 
         public async Task<RootCallResult<Fixture[]>> GetH2HFixtures(string h2h, string? date, int? league, int? season, int? last, int? next, string? from, string? to, string? status, int? venue, string? timezone)
@@ -81,12 +81,12 @@ namespace api_football.Handlers
             });
 
             var result = await _client.GetAsync(url);
-            var content = await result.Content.ReadAsStreamAsync();
+            var content = await result.Content.ReadAsStringAsync();
 
             if (result.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<Fixture[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<Fixture[]>>(content);
         }
 
         public async Task<RootCallResult<FixtureStats[]>> GetFixtureStatistics(int fixture, int? team, string? type)
@@ -99,12 +99,12 @@ namespace api_football.Handlers
             });
 
             var result = await _client.GetAsync(url);
-            var content = await result.Content.ReadAsStreamAsync();
+            var content = await result.Content.ReadAsStringAsync();
 
             if (result.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<FixtureStats[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<FixtureStats[]>>(content);
         }
 
         public async Task<RootCallResult<FixtureEvent[]>> GetFixtureEvents(int fixture, int? team, string? player, string? type)
@@ -118,12 +118,12 @@ namespace api_football.Handlers
             });
 
             var result = await _client.GetAsync(url);
-            var content = await result.Content.ReadAsStreamAsync();
+            var content = await result.Content.ReadAsStringAsync();
 
             if (result.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<FixtureEvent[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<FixtureEvent[]>>(content);
         }
 
         public async Task<RootCallResult<Lineup[]>> GetFixtureLineups(int fixture, int? team, int? player, string? type)
@@ -137,12 +137,12 @@ namespace api_football.Handlers
             });
 
             var result = await _client.GetAsync(url);
-            var content = await result.Content.ReadAsStreamAsync();
+            var content = await result.Content.ReadAsStringAsync();
 
             if (result.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<Lineup[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<Lineup[]>>(content);
         }
 
         public async Task<RootCallResult<PlayerStats[]>> GetFixturePlayersStats(int fixture, int? team)
@@ -154,12 +154,12 @@ namespace api_football.Handlers
             });
 
             var result = await _client.GetAsync(url);
-            var content = await result.Content.ReadAsStreamAsync();
+            var content = await result.Content.ReadAsStringAsync();
 
             if (result.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<PlayerStats[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<PlayerStats[]>>(content);
         }
     }
 }

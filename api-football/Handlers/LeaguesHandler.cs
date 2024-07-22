@@ -4,7 +4,7 @@ using api_football.Models.Root;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.Json;
+using Newtonsoft.Json;
 using System.Threading.Tasks;
 
 namespace api_football.Handlers
@@ -27,12 +27,12 @@ namespace api_football.Handlers
                                                                 ,{"type", type}, {"current", current}, {"search", search}, {"last", last.ToString()} });
 
             var response = await _client.GetAsync(url);
-            var content = await response.Content.ReadAsStreamAsync();
+            var content = await response.Content.ReadAsStringAsync();
 
             if (response.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<League[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<League[]>>(content);
         }
 
         public async Task<RootCallResult<int[]>> GetSeasons()
@@ -40,12 +40,12 @@ namespace api_football.Handlers
             var url = BuildUrl("leagues");
 
             var response = await _client.GetAsync(url);
-            var content = await response.Content.ReadAsStreamAsync();
+            var content = await response.Content.ReadAsStringAsync();
 
             if (response.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<int[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<int[]>>(content);
         }
     }
 }

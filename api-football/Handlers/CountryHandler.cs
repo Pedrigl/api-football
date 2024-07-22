@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using api_football.Models.Root;
-using System.Text.Json;
+using Newtonsoft.Json;
 using api_football.Models;
 using api_football.Handlers.Interfaces;
 namespace api_football.Handlers
@@ -22,11 +22,11 @@ namespace api_football.Handlers
                             new Dictionary<string, string> { { "name", name }, { "code", code }, { "search", search } });
 
             var response = await _client.GetAsync(url);
-            var content = await response.Content.ReadAsStreamAsync();
+            var content = await response.Content.ReadAsStringAsync();
             if (response.StatusCode > System.Net.HttpStatusCode.NoContent)
-                throw new HttpRequestException((await JsonSerializer.DeserializeAsync<ErrorMessage>(content)).message);
+                throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return await JsonSerializer.DeserializeAsync<RootCallResult<Country[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<Country[]>>(content);
         }
 
 
