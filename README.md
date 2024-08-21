@@ -8,5 +8,5 @@ Made to be as accurate to the web services as possible.
 All documentation can be found at https://www.api-football.com/documentation-v3
 
 # Architecture
-![image](https://github.com/user-attachments/assets/a26cf5ff-6255-40b8-8bdf-f7696a958acb)
+![image](https://github.com/Pedrigl/api-football/blob/master/workflows/Architecture.png)
 
