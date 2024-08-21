@@ -8,8 +8,8 @@ Made to be as accurate to the web services as possible.
 All documentation can be found at https://www.api-football.com/documentation-v3
 
 # Use Example
-![image](https://github.com/Pedrigl/api-football/blob/master/workflows/use-example.png)
+![image](https://raw.githubusercontent.com/Pedrigl/api-football/master/workflows/use-example.png)
 
 # Architecture
-![image](https://github.com/Pedrigl/api-football/blob/master/workflows/Architecture.png)
+![image](https://raw.githubusercontent.com/Pedrigl/api-football/master/workflows/Architecture.png)
 
