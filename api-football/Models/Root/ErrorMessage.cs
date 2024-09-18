@@ -8,9 +8,6 @@ namespace api_football.Models.Root
 {
     public class ErrorMessage
     {
-        internal ErrorMessage()
-        {
-        }
         public required string message { get; set; }
     }
 }
