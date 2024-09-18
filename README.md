@@ -1,5 +1,5 @@
 # api-football
-A C# Wrapper to the api-football.com/ API.
+A C# Wrapper to the api-football.com API.
 Made to be as accurate to the web services as possible.
 
 [![Nuget](https://img.shields.io/badge/NuGet-004880?style=for-the-badge&logo=nuget&logoColor=white)](https://www.nuget.org/packages/api-football/)
