@@ -29,7 +29,7 @@ jobs:
         export PATH="$PATH:~/.dotnet/tools"
         cd api-football
         dotnet version patch -f api-football/api-football.csproj
-        git add api-football/api-football.csproj
+        git add api-football.csproj
         git commit -m "Increment version [skip ci]"
         git push
 
@@ -45,4 +45,4 @@ jobs:
     - name: Publish to NuGet
       env:
         NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
-      run: dotnet nuget push ./nupkg/*.nupkg --api-key $NUGET_API_KEY --source https://api.nuget.org/v3/index.json
+      run: dotnet nuget push ./nupkg/*.nupkg --api-key $NUGET_API_KEY --source https://api.nuget.org/v3/index.json --skip-duplicate
