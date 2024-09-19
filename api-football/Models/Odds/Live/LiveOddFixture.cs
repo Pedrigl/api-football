@@ -9,7 +9,7 @@ namespace api_football.Models.Odds.Live
 {
     public class LiveOddFixture
     {
-        internal LiveOddFixture()
+        public LiveOddFixture()
         {
         }
         public int id { get; set; }

@@ -8,7 +8,7 @@ namespace api_football.Models.Persons
 {
     public class PersonInfo : IdNameTuple
     {
-        internal PersonInfo()
+        public PersonInfo()
         {
         }
         public string? photo { get; set; }

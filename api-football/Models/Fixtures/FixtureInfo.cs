@@ -8,7 +8,7 @@ namespace api_football.Models.Fixtures
 {
     public class FixtureInfo
     {
-        internal FixtureInfo()
+        public FixtureInfo()
         {
         }
         public int id { get; set; }

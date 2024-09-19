@@ -8,7 +8,7 @@ namespace api_football.Models.Injuries
 {
     public class Fixture
     {
-        internal Fixture()
+        public Fixture()
         {
         }
         public int id { get; set; }

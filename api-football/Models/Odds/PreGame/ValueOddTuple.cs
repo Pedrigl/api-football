@@ -8,7 +8,7 @@ namespace api_football.Models.Odds.PreGame
 {
     public class ValueOddTuple
     {
-        internal ValueOddTuple()
+        public ValueOddTuple()
         {
         }
         public int value { get; set; }

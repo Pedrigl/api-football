@@ -8,7 +8,7 @@ namespace api_football.Models.Fixtures.PlayersStatistics.Stats
 {
     public class Statistics
     {
-        internal Statistics()
+        public Statistics()
         {
         }
         public required GamesPlayed games { get; set; }

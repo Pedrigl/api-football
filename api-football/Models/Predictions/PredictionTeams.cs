@@ -8,7 +8,7 @@ namespace api_football.Models.Predictions
 {
     public class PredictionTeams
     {
-        internal PredictionTeams()
+        public PredictionTeams()
         {
         }
         public required PredictionTeamInfo home { get; set; }

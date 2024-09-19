@@ -8,7 +8,7 @@ namespace api_football.Models.Fixtures.PlayersStatistics.Stats
 {
     public class Duels
     {
-        internal Duels()
+        public Duels()
         {
         }
         public int? total { get; set; }

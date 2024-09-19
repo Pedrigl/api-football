@@ -8,7 +8,7 @@ namespace api_football.Models.Odds.PreGame
 {
     public class PregameBookmaker : IdNameTuple
     {
-        internal PregameBookmaker()
+        public PregameBookmaker()
         {
         }
         public required PreGameBet[] bets { get; set; }

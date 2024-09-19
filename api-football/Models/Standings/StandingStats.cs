@@ -9,7 +9,7 @@ namespace api_football.Models.Standing
 {
     public class StandingStats
     {
-        internal StandingStats()
+        public StandingStats()
         {
         }
         public int played { get; set; }

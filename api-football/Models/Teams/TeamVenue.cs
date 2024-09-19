@@ -8,7 +8,7 @@ namespace api_football.Models.Teams
 {
     public class TeamVenue
     {
-        internal TeamVenue()
+        public TeamVenue()
         {
         }
         public int id { get; set; }

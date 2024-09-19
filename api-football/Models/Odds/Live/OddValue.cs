@@ -8,7 +8,7 @@ namespace api_football.Models.Odds.Live
 {
     public class OddValue
     {
-        internal OddValue()
+        public OddValue()
         {
         }
         public required string value { get; set; }

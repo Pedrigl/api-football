@@ -9,7 +9,7 @@ namespace api_football.Models.Statistics
 {
     public class Biggest
     {
-        internal Biggest()
+        public Biggest()
         {
         }
         public required GenericWinDrawLoss<int> streak { get; set; }

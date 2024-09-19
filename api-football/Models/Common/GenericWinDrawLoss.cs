@@ -8,7 +8,7 @@ namespace api_football.Models.Common
 {
     public class GenericWinDrawLoss <T>
     {
-        internal GenericWinDrawLoss()
+        public GenericWinDrawLoss()
         {
         }
         public required T wins { get; set; }

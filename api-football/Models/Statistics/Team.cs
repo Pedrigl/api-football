@@ -8,7 +8,7 @@ namespace api_football.Models.Statistics
 {
     public class Team
     {
-        internal Team()
+        public Team()
         {
         }
         public int id { get; set; }

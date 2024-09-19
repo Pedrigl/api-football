@@ -13,7 +13,7 @@ namespace api_football.Models.Players
 {
     public class PlayerStatistics
     {
-        internal PlayerStatistics()
+        public PlayerStatistics()
         {
         }
         public required Team team { get; set; }

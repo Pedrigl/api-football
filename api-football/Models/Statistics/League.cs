@@ -9,7 +9,7 @@ namespace api_football.Models.Statistics
 {
     public class League 
     {
-        internal League()
+        public League()
         {
         }
         public int id { get; set; }

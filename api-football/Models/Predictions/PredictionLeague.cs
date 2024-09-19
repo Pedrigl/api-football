@@ -10,7 +10,7 @@ namespace api_football.Models.Predictions
 {
     public class PredictionLeague
     {
-        internal PredictionLeague()
+        public PredictionLeague()
         {
         }
         public required string form { get; set; }
