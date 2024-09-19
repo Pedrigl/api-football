@@ -26,4 +26,8 @@
     <ProjectReference Include="..\api-football\api-football.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\Coaches\" />
+  </ItemGroup>
+
 </Project>
