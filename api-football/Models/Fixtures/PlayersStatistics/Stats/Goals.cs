@@ -4,7 +4,7 @@
     {
         public Goals()
         {
-        }
+        } 
         public int? total { get; set; }
         public int? conceded { get; set; }
         public int? assists { get; set; }
