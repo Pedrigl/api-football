@@ -1,12 +1,7 @@
 ﻿using api_football.Handlers.Interfaces;
 using api_football.Models.Predictions;
 using api_football.Models.Root;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Newtonsoft.Json;
-using System.Threading.Tasks;
 
 namespace api_football.Handlers
 {
@@ -18,7 +13,7 @@ namespace api_football.Handlers
 
         public async Task<RootCallResult<Prediction[]>> GetPredictions(int fixture)
         {
-            var url = BuildUrl("predictions", new string[] {"fixture"},new Dictionary<string, string>
+            var url = BuildUrl("predictions", new string[] { "fixture" }, new Dictionary<string, string>
             {
                 { "fixture", fixture.ToString() }
             });

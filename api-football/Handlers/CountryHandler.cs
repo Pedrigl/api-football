@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using api_football.Handlers.Interfaces;
+using api_football.Models;
 using api_football.Models.Root;
 using Newtonsoft.Json;
-using api_football.Models;
-using api_football.Handlers.Interfaces;
 namespace api_football.Handlers
 {
     public class CountryHandler : GenericHandler, ICountryHandler

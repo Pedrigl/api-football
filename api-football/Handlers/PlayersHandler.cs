@@ -2,12 +2,7 @@
 using api_football.Models.Players;
 using api_football.Models.Players.Squads;
 using api_football.Models.Root;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Newtonsoft.Json;
-using System.Threading.Tasks;
 
 namespace api_football.Handlers
 {
@@ -19,7 +14,7 @@ namespace api_football.Handlers
 
         public async Task<RootCallResult<int[]>> GetPlayersSeasons(int? id)
         {
-            var url = BuildUrl("players/seasons", new string[] {"id"}, new Dictionary<string, string>
+            var url = BuildUrl("players/seasons", new string[] { "id" }, new Dictionary<string, string>
             {
                 {"id", id.ToString() } }
             );

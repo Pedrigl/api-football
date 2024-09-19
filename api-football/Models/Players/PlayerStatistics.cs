@@ -1,11 +1,5 @@
 ﻿using api_football.Models.Fixtures.PlayersStatistics.Stats;
-using api_football.Models.League;
 using api_football.Models.Statistics;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Cards = api_football.Models.Fixtures.PlayersStatistics.Stats.Cards;
 using Penalties = api_football.Models.Fixtures.PlayersStatistics.Stats.Penalties;
 

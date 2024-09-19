@@ -4,12 +4,7 @@ using api_football.Models.Odds.Live;
 using api_football.Models.Odds.PreGame;
 using api_football.Models.Odds.PreGame.Mapping;
 using api_football.Models.Root;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Newtonsoft.Json;
-using System.Threading.Tasks;
 
 namespace api_football.Handlers
 {
@@ -22,7 +17,7 @@ namespace api_football.Handlers
 
         public async Task<RootCallResult<LiveOdd[]>> GetLiveOdds(int? fixture, int? league, int? bet)
         {
-            var url = BuildUrl("odds/live", new string[] {"fixture", "league", "bet"}, new Dictionary<string, string>
+            var url = BuildUrl("odds/live", new string[] { "fixture", "league", "bet" }, new Dictionary<string, string>
             {
                 {"fixture", fixture.ToString()},
                 {"league", league.ToString()},
@@ -40,7 +35,7 @@ namespace api_football.Handlers
 
         public async Task<RootCallResult<IdNameTuple[]>> GetAvailableLiveBets(string? id, string? search)
         {
-            var url = BuildUrl("odds/live/bets", new string[] {"id", "search"}, new Dictionary<string, string>
+            var url = BuildUrl("odds/live/bets", new string[] { "id", "search" }, new Dictionary<string, string>
             {
                 {"id", id},
                 {"search", search}
@@ -57,7 +52,7 @@ namespace api_football.Handlers
 
         public async Task<RootCallResult<PregameOdds[]>> GetPreGameOdds(int? fixture, int? league, int? season, string? date, string? timezone, int? page, int? bookmaker, int? bet)
         {
-            var url = BuildUrl("odds", new string[] {"fixture", "league", "season", "date", "timezone", "page", "bookmaker", "bet"}, new Dictionary<string, string>
+            var url = BuildUrl("odds", new string[] { "fixture", "league", "season", "date", "timezone", "page", "bookmaker", "bet" }, new Dictionary<string, string>
             {
                 {"fixture", fixture.ToString()},
                 {"league", league.ToString()},
@@ -80,7 +75,7 @@ namespace api_football.Handlers
 
         public async Task<RootCallResult<Mapping[]>> GetMappings(int? page)
         {
-            var url = BuildUrl("odds/mappings", new string[] {"page"}, new Dictionary<string, string>
+            var url = BuildUrl("odds/mappings", new string[] { "page" }, new Dictionary<string, string>
             {
                 {"page", page.ToString()}
             });
@@ -96,7 +91,7 @@ namespace api_football.Handlers
 
         public async Task<RootCallResult<IdNameTuple[]>> GetAvailablePreGameBets(string? id, string? search)
         {
-            var url = BuildUrl("odds/bets", new string[] {"id", "search"}, new Dictionary<string, string>
+            var url = BuildUrl("odds/bets", new string[] { "id", "search" }, new Dictionary<string, string>
             {
                 {"id", id},
                 {"search", search}
@@ -113,7 +108,7 @@ namespace api_football.Handlers
 
         public async Task<RootCallResult<IdNameTuple[]>> GetAvailableBookMakers(string? id, string? search)
         {
-            var url = BuildUrl("odds/bookmakers", new string[] {"id", "search"}, new Dictionary<string, string>
+            var url = BuildUrl("odds/bookmakers", new string[] { "id", "search" }, new Dictionary<string, string>
             {
                 {"id", id},
                 {"search", search}

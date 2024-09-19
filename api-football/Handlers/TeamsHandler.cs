@@ -2,12 +2,7 @@
 using api_football.Models;
 using api_football.Models.Root;
 using api_football.Models.Statistics;
-using api_football.Models.Teams;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Newtonsoft.Json;
-using System.Threading.Tasks;
 using Team = api_football.Models.Teams.Team;
 
 namespace api_football.Handlers

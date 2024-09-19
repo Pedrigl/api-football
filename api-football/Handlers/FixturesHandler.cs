@@ -3,11 +3,7 @@ using api_football.Models.Fixtures;
 using api_football.Models.Fixtures.Lineups;
 using api_football.Models.Fixtures.PlayersStatistics;
 using api_football.Models.Root;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Newtonsoft.Json;
-using System.Threading.Tasks;
 
 namespace api_football.Handlers
 {
@@ -17,7 +13,7 @@ namespace api_football.Handlers
 
         public async Task<RootCallResult<string[]>> GetRounds(int league, int season, bool? current)
         {
-            var url = BuildUrl("fixtures/rounds", new string[] {"league", "season", "current"},new Dictionary<string, string>
+            var url = BuildUrl("fixtures/rounds", new string[] { "league", "season", "current" }, new Dictionary<string, string>
             {
                 { "league", league.ToString() },
                 { "season", season.ToString() },
@@ -65,7 +61,7 @@ namespace api_football.Handlers
 
         public async Task<RootCallResult<Fixture[]>> GetH2HFixtures(string h2h, string? date, int? league, int? season, int? last, int? next, string? from, string? to, string? status, int? venue, string? timezone)
         {
-            var url = BuildUrl("fixtures/headtohead", new string[] {"h2h", "date", "league", "season", "last", "next", "from", "to", "status", "venue", "timezone" }, new Dictionary<string, string>
+            var url = BuildUrl("fixtures/headtohead", new string[] { "h2h", "date", "league", "season", "last", "next", "from", "to", "status", "venue", "timezone" }, new Dictionary<string, string>
             {
                 {"h2h", h2h },
                 {"date", date },

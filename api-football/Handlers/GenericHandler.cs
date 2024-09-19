@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace api_football.Handlers
 {
@@ -15,7 +11,7 @@ namespace api_football.Handlers
             _client = clientFactory.CreateClient("api-football-client");
         }
 
-        protected virtual string BuildUrl(string endpoint, string[] allowedParameters =null, Dictionary<string, string> parameters = null)
+        protected virtual string BuildUrl(string endpoint, string[] allowedParameters = null, Dictionary<string, string> parameters = null)
         {
             allowedParameters ??= Array.Empty<string>();
             parameters ??= new Dictionary<string, string>();

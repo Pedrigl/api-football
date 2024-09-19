@@ -2,11 +2,6 @@
 using api_football.Models.Coaches;
 using api_football.Models.Root;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using Newtonsoft.Json;
-using System.Threading.Tasks;
 
 namespace api_football.Handlers
 {
@@ -18,7 +13,7 @@ namespace api_football.Handlers
 
         public async Task<RootCallResult<Coach[]>> GetCoaches(int? id, int? team, string? search)
         {
-            var url = BuildUrl("coachs", new string[] {"id", "team", "search"}, new Dictionary<string, string>
+            var url = BuildUrl("coachs", new string[] { "id", "team", "search" }, new Dictionary<string, string>
             {
                 {"id", id.ToString() },
                 {"team", team.ToString() },
@@ -31,7 +26,7 @@ namespace api_football.Handlers
             if (result.StatusCode > System.Net.HttpStatusCode.NoContent)
                 throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
 
-            return JsonConvert.DeserializeObject< RootCallResult<Coach[]>>(content);
+            return JsonConvert.DeserializeObject<RootCallResult<Coach[]>>(content);
         }
     }
 }

@@ -11,7 +11,7 @@ var serviceProvider = services.BuildServiceProvider();
 
 var coachesHandler = serviceProvider.GetRequiredService<ICoachesHandler>();
 
-var coaches = await coachesHandler.GetCoaches(null,null,"tite");
+var coaches = await coachesHandler.GetCoaches(null, null, "tite");
 
 foreach (var coach in coaches.response)
 {

@@ -1,13 +1,6 @@
-﻿using api_football.Models.League;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace api_football.Models.Statistics
+﻿namespace api_football.Models.Statistics
 {
-    public class League 
+    public class League
     {
         public League()
         {

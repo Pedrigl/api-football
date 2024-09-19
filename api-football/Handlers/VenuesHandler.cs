@@ -1,11 +1,7 @@
 ﻿using api_football.Handlers.Interfaces;
 using api_football.Models;
 using api_football.Models.Root;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Newtonsoft.Json;
-using System.Threading.Tasks;
 
 namespace api_football.Handlers
 {
@@ -15,7 +11,7 @@ namespace api_football.Handlers
 
         public async Task<RootCallResult<Venue[]>> GetVenues(int? id, string? name, string? city, string? country, string? search)
         {
-            var url = BuildUrl("venues", new string[] {"id", "name", "city", "country", "search"}, 
+            var url = BuildUrl("venues", new string[] { "id", "name", "city", "country", "search" },
                                 new Dictionary<string, string> { { "id", id.ToString() }, {"name", name }, { "city", city},
                                                                     {"country", country }, {"search", search} });
 
@@ -24,7 +20,7 @@ namespace api_football.Handlers
 
             if (response.StatusCode > System.Net.HttpStatusCode.NoContent)
                 throw new HttpRequestException((JsonConvert.DeserializeObject<ErrorMessage>(content)).message);
-            
+
             return JsonConvert.DeserializeObject<RootCallResult<Venue[]>>(content);
         }
     }

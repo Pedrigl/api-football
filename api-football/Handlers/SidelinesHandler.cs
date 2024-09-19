@@ -1,12 +1,7 @@
 ﻿using api_football.Handlers.Interfaces;
 using api_football.Models.Common;
 using api_football.Models.Root;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Newtonsoft.Json;
-using System.Threading.Tasks;
 
 namespace api_football.Handlers
 {
@@ -19,7 +14,7 @@ namespace api_football.Handlers
 
         public async Task<RootCallResult<TypeStartEnd[]>> GetSidelines(int? player, int? coach)
         {
-            var url = BuildUrl("sidelined", new string[] {"player", "coach"},new Dictionary<string, string>
+            var url = BuildUrl("sidelined", new string[] { "player", "coach" }, new Dictionary<string, string>
             {
                 { "player", player?.ToString() },
                 { "coach", coach?.ToString() }
