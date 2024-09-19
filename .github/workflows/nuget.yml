@@ -22,7 +22,7 @@ jobs:
       run: |
         dotnet tool install --global dotnet-version-cli
         export PATH="$PATH:~/.dotnet/tools"
-        dotnet version patch
+        dotnet version patch -f api-football/api-football.csproj
 
     - name: Restore dependencies
       run: dotnet restore
