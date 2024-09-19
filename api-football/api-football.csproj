@@ -15,10 +15,10 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/Pedrigl/api-football</RepositoryUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<Version>1.3.2</Version>
+		<Version>1.3.4</Version>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-		<AssemblyVersion>1.3.2</AssemblyVersion>
-		<FileVersion>1.3.2</FileVersion>
+		<AssemblyVersion>1.3.4</AssemblyVersion>
+		<FileVersion>1.3.4</FileVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
