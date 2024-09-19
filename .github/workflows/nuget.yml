@@ -29,9 +29,6 @@ jobs:
         export PATH="$PATH:~/.dotnet/tools"
         cd api-football
         dotnet version patch -f api-football/api-football.csproj
-        git add api-football.csproj
-        git commit -m "Increment version [skip ci]" || echo "No changes to commit"
-        git push || echo "No changes to push"
 
     - name: Restore dependencies
       run: dotnet restore
