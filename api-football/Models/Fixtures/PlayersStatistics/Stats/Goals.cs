@@ -8,7 +8,7 @@ namespace api_football.Models.Fixtures.PlayersStatistics.Stats
 {
     public class Goals
     {
-        internal Goals()
+        public Goals()
         {
         }
         public int? total { get; set; }

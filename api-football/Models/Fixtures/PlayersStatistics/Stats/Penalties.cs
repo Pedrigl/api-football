@@ -8,7 +8,7 @@ namespace api_football.Models.Fixtures.PlayersStatistics.Stats
 {
     public class Penalties
     {
-        internal Penalties()
+        public Penalties()
         {
         }
         public int? won { get; set; }

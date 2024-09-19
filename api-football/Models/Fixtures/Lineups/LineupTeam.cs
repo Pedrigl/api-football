@@ -9,7 +9,7 @@ namespace api_football.Models.Fixtures.Lineups
 {
     public class LineupTeam : Team
     {
-        internal LineupTeam() { }
+        public LineupTeam() { }
         public LineupColors? colors { get; set; }
     }
 }

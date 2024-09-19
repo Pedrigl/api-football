@@ -8,7 +8,7 @@ namespace api_football.Models.Players
 {
     public class SeasonPlayed
     {
-        internal SeasonPlayed()
+        public SeasonPlayed()
         {
         }
         public int appearences { get; set; }

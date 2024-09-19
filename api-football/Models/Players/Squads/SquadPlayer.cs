@@ -9,7 +9,7 @@ namespace api_football.Models.Players.Squads
 {
     public class SquadPlayer : PersonInfo
     {
-        internal SquadPlayer()
+        public SquadPlayer()
         {
         }
         public int age { get; set; }

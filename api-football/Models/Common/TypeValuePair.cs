@@ -8,7 +8,7 @@ namespace api_football.Models.Common
 {
     public class TypeValuePair<T>
     {
-        internal TypeValuePair()
+        public TypeValuePair()
         {
         }
         public required string type { get; set; }

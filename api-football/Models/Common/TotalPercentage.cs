@@ -8,7 +8,7 @@ namespace api_football.Models.Common
 {
     public class TotalPercentage
     {
-        internal TotalPercentage()
+        public TotalPercentage()
         {
         }
         public int total { get; set; }

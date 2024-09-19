@@ -8,7 +8,7 @@ namespace api_football.Models.League
 {
     public class LeagueInfo
     {
-        internal LeagueInfo()
+        public LeagueInfo()
         {
         }
         public int id { get; set; }

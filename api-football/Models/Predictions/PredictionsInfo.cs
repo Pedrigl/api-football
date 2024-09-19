@@ -9,7 +9,7 @@ namespace api_football.Models.Predictions
 {
     public class PredictionsInfo
     {
-        internal PredictionsInfo()
+        public PredictionsInfo()
         {
         }
         public required PredictedResult winner { get; set; }

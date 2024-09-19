@@ -8,7 +8,7 @@ namespace api_football.Models.Common
 {
     public class TypeStartEnd
     {
-        internal TypeStartEnd()
+        public TypeStartEnd()
         {
         }
         public required string type { get; set; }

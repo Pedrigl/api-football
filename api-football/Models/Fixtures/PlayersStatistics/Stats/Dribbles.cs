@@ -8,7 +8,7 @@ namespace api_football.Models.Fixtures.PlayersStatistics.Stats
 {
     public class Dribbles
     {
-        internal Dribbles()
+        public Dribbles()
         {
         }
         public int? attempts { get; set; }

@@ -9,7 +9,7 @@ namespace api_football.Models.Predictions
 {
     public class PredictionFixtures
     {
-        internal PredictionFixtures()
+        public PredictionFixtures()
         {
         }
         public required GenericHomeAwayTotal<int> played { get; set; }

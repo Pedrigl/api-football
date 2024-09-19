@@ -10,7 +10,7 @@ namespace api_football.Models.Transfers
 {
     public class TransferTeams
     {
-        internal TransferTeams()
+        public TransferTeams()
         {
         }
         [JsonProperty("in")]

@@ -8,7 +8,7 @@ namespace api_football.Models.Odds.PreGame.Mapping
 {
     public class MappingFixture
     {
-        internal MappingFixture()
+        public MappingFixture()
         {
         }
         public int id { get; set; }

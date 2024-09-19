@@ -8,7 +8,7 @@ namespace api_football.Models.Transfers
 {
     public class TransferInfo
     {
-        internal TransferInfo()
+        public TransferInfo()
         {
         }
         public required string date { get; set; }

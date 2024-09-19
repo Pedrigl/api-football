@@ -8,7 +8,7 @@ namespace api_football.Models.Common
 {
     public class Birth
     {
-        internal Birth()
+        public Birth()
         {
         }
         public required string date { get; set; }

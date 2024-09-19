@@ -8,7 +8,7 @@ namespace api_football.Models.Fixtures.PlayersStatistics.Stats
 {
     public class Cards
     {
-        internal Cards()
+        public Cards()
         {
         }
         public int? yellow { get; set; }

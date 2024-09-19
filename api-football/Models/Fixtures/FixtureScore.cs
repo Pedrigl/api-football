@@ -9,7 +9,7 @@ namespace api_football.Models.Fixtures
 {
     public class FixtureScore
     {
-        internal FixtureScore()
+        public FixtureScore()
         {
         }
         public GenericHomeAway<int>? halftime { get; set; }

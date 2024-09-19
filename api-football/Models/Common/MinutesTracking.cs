@@ -9,7 +9,7 @@ namespace api_football.Models.Common
 {
     public class MinutesTracking
     {
-        internal MinutesTracking()
+        public MinutesTracking()
         {
         }
         [JsonProperty("0-15")]

@@ -9,7 +9,7 @@ namespace api_football.Models.Statistics
 {
     public class Fixtures
     {
-        internal Fixtures()
+        public Fixtures()
         {
         }
         public required GenericHomeAwayTotal<int> played { get; set; }

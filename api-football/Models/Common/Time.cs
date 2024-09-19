@@ -8,7 +8,7 @@ namespace api_football.Models.Common
 {
     public class Time
     {
-        internal Time()
+        public Time()
         {
         }
         public int? elapsed { get; set; }

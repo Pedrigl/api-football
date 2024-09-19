@@ -8,7 +8,7 @@ namespace api_football.Models.Common
 {
     public class GenericTotalAverage <Tt,Ta>
     {
-        internal GenericTotalAverage()
+        public GenericTotalAverage()
         {
         }
         public required Tt total { get; set; }

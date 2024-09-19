@@ -8,7 +8,7 @@ namespace api_football.Models.Fixtures
 {
     public class FixtureMatch
     {
-        internal FixtureMatch()
+        public FixtureMatch()
         {
         }
         public required FixtureTeam home { get; set; }

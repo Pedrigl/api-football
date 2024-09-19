@@ -8,7 +8,7 @@ namespace api_football.Models.Odds.Live
 {
     public class OddInfo : IdNameTuple
     {
-        internal OddInfo()
+        public OddInfo()
         {
         }
         public required OddValue[] values { get; set; }

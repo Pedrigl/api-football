@@ -9,7 +9,7 @@ namespace api_football.Models.Statistics.Goals
 {
     public class GoalDetails
     {
-        internal GoalDetails()
+        public GoalDetails()
         {
         }
         public required GenericHomeAwayTotal<int> total { get; set; }

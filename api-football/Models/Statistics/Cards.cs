@@ -9,7 +9,7 @@ namespace api_football.Models.Statistics
 {
     public class Cards
     {
-        internal Cards()
+        public Cards()
         {
         }
         public required MinutesTracking yellow { get; set; }

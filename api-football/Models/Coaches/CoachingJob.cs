@@ -9,7 +9,7 @@ namespace api_football.Models.Coaches
 {
     public class CoachingJob
     {
-        internal CoachingJob()
+        public CoachingJob()
         {
         }
         public required Team team { get; set; }

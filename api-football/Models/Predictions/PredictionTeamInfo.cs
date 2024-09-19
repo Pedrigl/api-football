@@ -9,7 +9,7 @@ namespace api_football.Models.Predictions
 {
     public class PredictionTeamInfo : Team
     {
-        internal PredictionTeamInfo()
+        public PredictionTeamInfo()
         {
         }
         public Last5? last_5 { get; set; }

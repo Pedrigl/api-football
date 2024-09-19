@@ -9,7 +9,7 @@ namespace api_football.Models.Predictions
 {
     public class PredictionComparison
     {
-        internal PredictionComparison()
+        public PredictionComparison()
         {
         }
         public required GenericHomeAway<string> form { get; set; }

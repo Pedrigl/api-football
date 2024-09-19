@@ -8,7 +8,7 @@ namespace api_football.Models.Statistics
 {
     public class FormationPlayed
     {
-        internal FormationPlayed()
+        public FormationPlayed()
         {
         }
         public required string formation { get; set; }
