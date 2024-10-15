@@ -2,7 +2,7 @@
 using api_football.Models.Root;
 using Newtonsoft.Json;
 
-namespace api_football.Handlers
+namespace api_football.Handlers.Timezones
 {
     public class TimezoneHandler : GenericHandler, ITimezoneHandler
     {

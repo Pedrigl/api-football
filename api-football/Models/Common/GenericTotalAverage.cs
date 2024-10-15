@@ -5,7 +5,7 @@
         public GenericTotalAverage()
         {
         }
-        public required Tt total { get; set; }
-        public required Ta average { get; set; }
+        public required Tt? total { get; set; }
+        public required Ta? average { get; set; }
     }
 }

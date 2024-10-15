@@ -1,4 +1,6 @@
-﻿namespace api_football.Models.Transfers
+﻿using api_football.Models.Common;
+
+namespace api_football.Models.Transfers
 {
     public class Transfer
     {

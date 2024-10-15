@@ -7,7 +7,7 @@ namespace api_football.Models.Common
         {
         }
         [JsonProperty("for")]
-        public required T _for { get; set; }
-        public required T against { get; set; }
+        public required T? _for { get; set; }
+        public required T? against { get; set; }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace api_football.Models.Fixtures.Lineups
+﻿using api_football.Models.Common;
+
+namespace api_football.Models.Fixtures.Lineups
 {
     public class LineupPlayer : IdNameTuple
     {

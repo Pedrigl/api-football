@@ -3,7 +3,7 @@ using api_football.Models.Root;
 using api_football.Models.Transfers;
 using Newtonsoft.Json;
 
-namespace api_football.Handlers
+namespace api_football.Handlers.Transfers
 {
     public class TransfersHandler : GenericHandler, ITransfersHandler
     {
@@ -13,7 +13,7 @@ namespace api_football.Handlers
 
         public async Task<RootCallResult<Transfer[]>> GetTransfers(int? player, int? team)
         {
-            var url = BuildUrl("transfers", new string[] { "player", "team" }, new Dictionary<string, string>
+            var url = BuildUrl("transfers", new string[] { "player", "team" }, new Dictionary<string, object>
             {
                 { "player", player?.ToString() },
                 { "team", team?.ToString() }

@@ -5,8 +5,8 @@
         public GenericWinDrawLoss()
         {
         }
-        public required T wins { get; set; }
-        public required T draws { get; set; }
-        public required T loses { get; set; }
+        public required T? wins { get; set; }
+        public required T? draws { get; set; }
+        public required T? loses { get; set; }
     }
 }

@@ -5,6 +5,6 @@
         public GenericHomeAwayTotal()
         {
         }
-        public required T total { get; set; }
+        public required T? total { get; set; }
     }
 }

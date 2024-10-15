@@ -1,6 +1,4 @@
-﻿using api_football.Models.Standing;
-
-namespace api_football.Models.Standings
+﻿namespace api_football.Models.Standings
 {
     public class StandingLeague : Statistics.League
     {

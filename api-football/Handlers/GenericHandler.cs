@@ -11,10 +11,10 @@ namespace api_football.Handlers
             _client = clientFactory.CreateClient("api-football-client");
         }
 
-        protected virtual string BuildUrl(string endpoint, string[] allowedParameters = null, Dictionary<string, string> parameters = null)
+        protected virtual string BuildUrl(string endpoint, string[] allowedParameters = null, Dictionary<string, object> parameters = null)
         {
             allowedParameters ??= Array.Empty<string>();
-            parameters ??= new Dictionary<string, string>();
+            parameters ??= new Dictionary<string, object>();
             parameters = parameters.Where(p => p.Value != null && p.Value != string.Empty && p.Value != "0").ToDictionary(p => p.Key, p => p.Value);
             string[] parametersNotAllowed = parameters.Keys.Where(p => !allowedParameters.Contains(p)).ToArray();
 

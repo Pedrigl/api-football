@@ -3,7 +3,7 @@ using api_football.Models.Coaches;
 using api_football.Models.Root;
 using Newtonsoft.Json;
 
-namespace api_football.Handlers
+namespace api_football.Handlers.Coaches
 {
     public class CoachesHandler : GenericHandler, ICoachesHandler
     {
@@ -11,14 +11,17 @@ namespace api_football.Handlers
         {
         }
 
-        public async Task<RootCallResult<Coach[]>> GetCoaches(int? id, int? team, string? search)
+        public async Task<RootCallResult<Coach[]>> GetCoaches(CoachQueryParameters parameters)
         {
-            var url = BuildUrl("coachs", new string[] { "id", "team", "search" }, new Dictionary<string, string>
-            {
-                {"id", id.ToString() },
-                {"team", team.ToString() },
-                {"search", search }
-            });
+            var url = BuildUrl(
+                "coachs",
+                new string[] { "id", "team", "search" },
+                new Dictionary<string, object>
+                {
+                    { "id", parameters.Id },
+                    { "team", parameters.Team },
+                    { "search", parameters.Search }
+                });
 
             var result = await _client.GetAsync(url);
             var content = await result.Content.ReadAsStringAsync();

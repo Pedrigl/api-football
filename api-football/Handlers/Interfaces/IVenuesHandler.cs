@@ -5,6 +5,6 @@ namespace api_football.Handlers.Interfaces
 {
     public interface IVenuesHandler
     {
-        Task<RootCallResult<Venue[]>> GetVenues(int? id, string? name, string? city, string? country, string? search);
+        Task<RootCallResult<Venue[]>> GetVenues(VenueSearchParameters parameters);
     }
 }

@@ -1,20 +1,26 @@
 ﻿using api_football.Extensions;
 using api_football.Extensions.Http;
+using api_football.Handlers.Fixtures;
 using api_football.Handlers.Interfaces;
+using api_football.Models;
 using Microsoft.Extensions.DependencyInjection;
 
 var services = new ServiceCollection();
 
-services.AddApiFootballServices(new ApiSportsClientBuilder(""));
+services.AddApiFootballServices(new ApiSportsClientBuilder("20fbdf493eb459564d090a9583f4085a"));
 
 var serviceProvider = services.BuildServiceProvider();
 
-var coachesHandler = serviceProvider.GetRequiredService<ICoachesHandler>();
+var fixturesHandler = serviceProvider.GetRequiredService<IFixturesHandler>();
 
-var coaches = await coachesHandler.GetCoaches(null, null, "tite");
-
-foreach (var coach in coaches.response)
+var fixture = await fixturesHandler.GetFixtures(new FixtureQueryParameters
 {
-    Console.WriteLine(coach.firstname);
-}
+    Team = 6,
+    League = 1,
+    Season = 2018
+    
+});
+
+Console.WriteLine(fixture.response.Length);
+
 

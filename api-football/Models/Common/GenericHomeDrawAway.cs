@@ -5,6 +5,6 @@
         public GenericHomeDrawAway()
         {
         }
-        public required T draw { get; set; }
+        public required T? draw { get; set; }
     }
 }

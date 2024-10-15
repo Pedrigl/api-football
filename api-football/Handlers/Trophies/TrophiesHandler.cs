@@ -3,7 +3,7 @@ using api_football.Models.Root;
 using api_football.Models.Trophies;
 using Newtonsoft.Json;
 
-namespace api_football.Handlers
+namespace api_football.Handlers.Trophies
 {
     public class TrophiesHandler : GenericHandler, ITrophiesHandler
     {
@@ -13,7 +13,7 @@ namespace api_football.Handlers
 
         public async Task<RootCallResult<Trophy[]>> GetTrophies(int? player, int? coach)
         {
-            var url = BuildUrl("trophies", new string[] { "player", "coach" }, new Dictionary<string, string>
+            var url = BuildUrl("trophies", new string[] { "player", "coach" }, new Dictionary<string, object>
             {
                 { "player", player?.ToString() },
                 { "coach", coach?.ToString() }

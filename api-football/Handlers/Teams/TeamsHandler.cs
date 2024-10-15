@@ -5,7 +5,7 @@ using api_football.Models.Statistics;
 using Newtonsoft.Json;
 using Team = api_football.Models.Teams.Team;
 
-namespace api_football.Handlers
+namespace api_football.Handlers.Teams
 {
     public class TeamsHandler : GenericHandler, ITeamsHandler
     {
@@ -13,14 +13,22 @@ namespace api_football.Handlers
         {
         }
 
-        public async Task<RootCallResult<Team[]>> GetTeamsInformations(int? id, string? name, int? league,
-                                                                        int? season, string? country, string? code,
-                                                                        int? venue, string? search)
+        public async Task<RootCallResult<Team[]>> GetTeamsInformations(TeamInfoQueryParameters parameters)
         {
-            var url = BuildUrl("teams", new string[] { "id", "name", "league", "season", "country", "code", "venue", "search" },
-                                           new Dictionary<string, string> { { "id", id.ToString() }, { "name", name }, { "league", league.ToString() },
-                                                                                                      { "season", season.ToString() }, { "country", country }, { "code", code },
-                                                                                                      { "venue", venue.ToString() }, { "search", search } });
+            var url = BuildUrl("teams", new string[] 
+            { 
+                "id", "name", "league", "season", "country", "code", "venue", "search" 
+            }, new Dictionary<string, object>
+            {
+                { "id", parameters.Id },
+                { "name", parameters.Name },
+                { "league", parameters.League },
+                { "season", parameters.Season },
+                { "country", parameters.Country },
+                { "code", parameters.Code },
+                { "venue", parameters.Venue },
+                { "search", parameters.Search }
+            });
 
             var response = await _client.GetAsync(url);
             var content = await response.Content.ReadAsStringAsync();
@@ -31,11 +39,18 @@ namespace api_football.Handlers
             return JsonConvert.DeserializeObject<RootCallResult<Team[]>>(content);
         }
 
-        public async Task<RootCallResult<TeamStatistics>> GetTeamStatistics(int league, int season, int team, string date)
+        public async Task<RootCallResult<TeamStatistics>> GetTeamStatistics(TeamStatisticsQueryParameters parameters)
         {
-            var url = BuildUrl("teams/statistics", new string[] { "league", "season", "team", "date" },
-                                                          new Dictionary<string, string> { { "league", league.ToString() }, { "season", season.ToString() },
-                                                                                                                                                               { "team", team.ToString() }, { "date", date } });
+            var url = BuildUrl("teams/statistics", new string[] 
+            {
+                "league", "season", "team", "date" 
+            }, new Dictionary<string, object>
+            {
+                { "league", parameters.League },
+                { "season", parameters.Season },
+                { "team", parameters.Team },
+                { "date", parameters.Date }
+            });
 
             var response = await _client.GetAsync(url);
             var content = await response.Content.ReadAsStringAsync();
@@ -48,8 +63,10 @@ namespace api_football.Handlers
 
         public async Task<RootCallResult<int[]>> GetTeamSeasons(int team)
         {
-            var url = BuildUrl("teams/seasons", new string[] { "team" },
-                                                              new Dictionary<string, string> { { "team", team.ToString() } });
+            var url = BuildUrl("teams/seasons", new string[] { "team" }, new Dictionary<string, object>
+            {
+                { "team", team.ToString() }
+            });
 
             var response = await _client.GetAsync(url);
             var content = await response.Content.ReadAsStringAsync();

@@ -3,7 +3,7 @@ using api_football.Models.Root;
 using api_football.Models.Standings;
 using Newtonsoft.Json;
 
-namespace api_football.Handlers
+namespace api_football.Handlers.Standings
 {
     public class StandingHandler : GenericHandler, IStandingsHandler
     {
@@ -13,7 +13,7 @@ namespace api_football.Handlers
 
         public async Task<RootCallResult<Standing[]>> GetStandings(int? league, int season, int? team)
         {
-            var url = BuildUrl("standings", new string[] { "league", "season", "team" }, new Dictionary<string, string>
+            var url = BuildUrl("standings", new string[] { "league", "season", "team" }, new Dictionary<string, object>
             {
                 { "league", league.ToString() },
                 { "season", season.ToString() },

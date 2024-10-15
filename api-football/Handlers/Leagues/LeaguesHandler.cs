@@ -3,7 +3,7 @@ using api_football.Models.League;
 using api_football.Models.Root;
 using Newtonsoft.Json;
 
-namespace api_football.Handlers
+namespace api_football.Handlers.Leagues
 {
     public class LeaguesHandler : GenericHandler, ILeaguesHandler
     {
@@ -11,16 +11,23 @@ namespace api_football.Handlers
         {
         }
 
-        public async Task<RootCallResult<League[]>> GetLeagues(int? id, string? name, string? country,
-                                                               string? code, int? season, int? team,
-                                                               string? type, string? current, string? search, int? last)
+        public async Task<RootCallResult<League[]>> GetLeagues(LeagueQueryParameters parameters)
         {
             var url = BuildUrl("leagues", new string[] {"id", "name", "country",
                                                         "code", "season", "team",
                                                         "type", "current", "search", "last"},
-                                new Dictionary<string, string> { { "id", id.ToString()}, { "name", name}, {"country", country }
-                                                                ,{"code", code}, {"season", season.ToString()}, {"team", team.ToString()}
-                                                                ,{"type", type}, {"current", current}, {"search", search}, {"last", last.ToString()} });
+                                new Dictionary<string, object> {
+                                    { "id", parameters.Id },
+                                    { "name", parameters.Name },
+                                    { "country", parameters.Country },
+                                    { "code", parameters.Code },
+                                    { "season", parameters.Season },
+                                    { "team", parameters.Team },
+                                    { "type", parameters.Type },
+                                    { "current", parameters.Current },
+                                    { "search", parameters.Search },
+                                    { "last", parameters.Last }
+                                });
 
             var response = await _client.GetAsync(url);
             var content = await response.Content.ReadAsStringAsync();

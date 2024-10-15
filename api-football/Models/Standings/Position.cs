@@ -1,6 +1,6 @@
 ﻿using api_football.Models.Statistics;
 
-namespace api_football.Models.Standing
+namespace api_football.Models.Standings
 {
     public class Position
     {

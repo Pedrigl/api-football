@@ -1,4 +1,4 @@
-﻿namespace api_football.Models
+﻿namespace api_football.Models.Common
 {
     public class IdNameTuple
     {

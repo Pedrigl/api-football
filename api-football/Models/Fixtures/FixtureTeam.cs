@@ -5,6 +5,6 @@
         public FixtureTeam()
         {
         }
-        public bool winner { get; set; }
+        public bool? winner { get; set; }
     }
 }
