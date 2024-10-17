@@ -2,7 +2,7 @@ namespace api_football.Handlers.Players
 {
     public class PlayerQueryParameters
     {
-        public int? Id { get; set; }
+        public long? Id { get; set; }
         public int? Team { get; set; }
         public int? League { get; set; }
         public int? Season { get; set; }
